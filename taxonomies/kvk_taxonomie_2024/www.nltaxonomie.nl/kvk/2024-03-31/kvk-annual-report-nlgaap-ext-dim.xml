@@ -717,6 +717,8 @@
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="rj_DocumentRelatesToIndividualEntityOrGroup_loc" order="342.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_SupervisoryBoardReport" xlink:label="rj_SupervisoryBoardReport_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="rj_SupervisoryBoardReport_loc" order="343.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.xbrl.org/taxonomy/int/lei/2020-07-02/lei.xsd#lei_LEI" xlink:label="lei_LEI_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="lei_LEI_loc" order="344.0"/>
   </link:definitionLink>
   <link:definitionLink xlink:type="extended" xlink:role="https://www.nltaxonomie.nl/kvk/role/items-dimensional">
     <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_NullItems" xlink:label="kvk_NullItems_loc"/>
