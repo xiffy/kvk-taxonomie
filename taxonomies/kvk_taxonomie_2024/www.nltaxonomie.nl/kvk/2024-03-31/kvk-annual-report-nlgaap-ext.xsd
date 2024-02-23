@@ -4,7 +4,8 @@
   <xsd:annotation>
     <xsd:appinfo>
       <link:linkbaseRef xlink:type="simple" xlink:href="kvk-annual-report-nlgaap-ext-dim.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
-      <link:roleType roleURI="https://www.nltaxonomie.nl/kvk/role/axis-defaults" id="kvk-role-axis-defaults">
+      <link:linkbaseRef xlink:type="simple" xlink:href="kvk-annual-report-nlgaap-ext-for.xml" xlink:role="http://www.xbrl.org/2003/role/linkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+	  <link:roleType roleURI="https://www.nltaxonomie.nl/kvk/role/axis-defaults" id="kvk-role-axis-defaults">
         <link:definition>[990000] Axis - Defaults</link:definition>
         <link:usedOn>link:calculationLink</link:usedOn>
         <link:usedOn>link:definitionLink</link:usedOn>
@@ -34,6 +35,4 @@
   </xsd:annotation>
   <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
   <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
-<!--  <xsd:import namespace="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor" schemaLocation="kvk-cor.xsd"/>
-  <xsd:import namespace="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" schemaLocation="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd"/> -->
 </xsd:schema>
