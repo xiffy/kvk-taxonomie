@@ -21,4 +21,5 @@
   <xsd:element name="NullDimension" id="kvk_NullDimension" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="NullHypercube" id="kvk_NullHypercube" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="NullItems" id="kvk_NullItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration"/>
+  <xsd:element name="DocumentEntityInformationTitle" id="kvk_DocumentEntityInformationTitle" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="instant"/>
 </xsd:schema>

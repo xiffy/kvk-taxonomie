@@ -46,5 +46,8 @@
     <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_NullItems" xlink:label="kvk_NullItems_loc"/>
     <link:label xlink:type="resource" xlink:label="kvk_NullItems_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Null items</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_NullItems_loc" xlink:to="kvk_NullItems_label_nl"/>
+	<link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_DocumentEntityInformationTitle" xlink:label="kvk_DocumentEntityInformationTitle_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_DocumentEntityInformationTitle_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Informatie over de rapportage en de rechtspersoon</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_DocumentEntityInformationTitle_loc" xlink:to="kvk_DocumentEntityInformationTitle_label_nl"/>
   </link:labelLink>
 </link:linkbase>
