@@ -38,5 +38,17 @@
 	<link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_DocumentEntityInformationTitle" xlink:label="kvk_DocumentEntityInformationTitle_loc"/>
     <link:label xlink:type="resource" xlink:label="kvk_DocumentEntityInformationTitle_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Document and entity information</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_DocumentEntityInformationTitle_loc" xlink:to="kvk_DocumentEntityInformationTitle_label_nl"/>
+	<link:loc xlink:type="locator" xlink:href="bw2-titel9-cor.xsd#bw2-titel9_BalanceSheetTitle" xlink:label="bw2-titel9_BalanceSheetTitle_loc"/>
+    <link:label xlink:type="resource" xlink:label="bw2-titel9_BalanceSheetTitle_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Balance sheet</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="bw2-titel9_BalanceSheetTitle_loc" xlink:to="bw2-titel9_BalanceSheetTitle_label_en"/>
+	<link:loc xlink:type="locator" xlink:href="bw2-titel9-cor.xsd#bw2-titel9_IncomeStatementTitle" xlink:label="bw2-titel9_IncomeStatementTitle_loc"/>
+    <link:label xlink:type="resource" xlink:label="bw2-titel9_IncomeStatementTitle_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Income statement</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="bw2-titel9_IncomeStatementTitle_loc" xlink:to="bw2-titel9_IncomeStatementTitle_label_en"/>
+	<link:loc xlink:type="locator" xlink:href="bw2-titel9-cor.xsd#bw2-titel9_AccountingPrinciplesTitle" xlink:label="bw2-titel9_AccountingPrinciplesTitle_loc"/>
+    <link:label xlink:type="resource" xlink:label="bw2-titel9_AccountingPrinciplesTitle_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Accounting principles</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="bw2-titel9_AccountingPrinciplesTitle_loc" xlink:to="bw2-titel9_AccountingPrinciplesTitle_label_en"/>
+	<link:loc xlink:type="locator" xlink:href="bw2-titel9-cor.xsd#bw2-titel9_NotesTitle" xlink:label="bw2-titel9_NotesTitle_loc"/>
+    <link:label xlink:type="resource" xlink:label="bw2-titel9_NotesTitle_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Notes</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="bw2-titel9_NotesTitle_loc" xlink:to="bw2-titel9_NotesTitle_label_en"/>
   </link:labelLink>
 </link:linkbase>
