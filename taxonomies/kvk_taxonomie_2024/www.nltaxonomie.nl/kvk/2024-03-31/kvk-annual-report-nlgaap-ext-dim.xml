@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xlink="http://www.w3.org/1999/xlink">
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldt="http://xbrl.org/2005/xbrldt">
   <link:roleRef roleURI="https://www.nltaxonomie.nl/kvk/role/items-consolidated-fs" xlink:type="simple" xlink:href="kvk-annual-report-nlgaap-ext.xsd#kvk-role-items-consolidated-fs"/>
   <link:roleRef roleURI="https://www.nltaxonomie.nl/kvk/role/items-separate-fs" xlink:type="simple" xlink:href="kvk-annual-report-nlgaap-ext.xsd#kvk-role-items-separate-fs"/>
   <link:roleRef roleURI="https://www.nltaxonomie.nl/kvk/role/items-dimensional" xlink:type="simple" xlink:href="kvk-annual-report-nlgaap-ext.xsd#kvk-role-items-dimensional"/>
@@ -719,6 +719,22 @@
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="rj_SupervisoryBoardReport_loc" order="343.0"/>
     <link:loc xlink:type="locator" xlink:href="https://www.xbrl.org/taxonomy/int/lei/2020-07-02/lei.xsd#lei_LEI" xlink:label="lei_LEI_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="lei_LEI_loc" order="344.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_FinancialReportingPeriod" xlink:label="bw2-titel9_FinancialReportingPeriod_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="bw2-titel9_FinancialReportingPeriod_loc" order="345.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_FinancialReportingPeriodEndDate" xlink:label="bw2-titel9_FinancialReportingPeriodEndDate_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="bw2-titel9_FinancialReportingPeriodEndDate_loc" order="346.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_FinancialStatementsConsolidated" xlink:label="rj_FinancialStatementsConsolidated_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="rj_FinancialStatementsConsolidated_loc" order="347.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd#rj_BalanceSheetBeforeAfterAppropriationResults" xlink:label="rj_BalanceSheetBeforeAfterAppropriationResults_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="rj_BalanceSheetBeforeAfterAppropriationResults_loc" order="348.0"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_LegalEntitySizeMicro" xlink:label="kvk_LegalEntitySizeMicro_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="kvk_LegalEntitySizeMicro_loc" order="349.0"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_LegalEntitySizeSmall" xlink:label="kvk_LegalEntitySizeSmall_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="kvk_LegalEntitySizeSmall_loc" order="350.0"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_LegalEntitySizeMedium" xlink:label="kvk_LegalEntitySizeMedium_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="kvk_LegalEntitySizeMedium_loc" order="351.0"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_LegalEntitySizeLarge" xlink:label="kvk_LegalEntitySizeLarge_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="kvk_LegalEntitySizeLarge_loc" order="352.0"/>
   </link:definitionLink>
   <link:definitionLink xlink:type="extended" xlink:role="https://www.nltaxonomie.nl/kvk/role/items-dimensional">
     <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_NullItems" xlink:label="kvk_NullItems_loc"/>
