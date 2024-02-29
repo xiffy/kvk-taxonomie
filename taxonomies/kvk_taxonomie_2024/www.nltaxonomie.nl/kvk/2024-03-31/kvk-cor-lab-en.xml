@@ -37,6 +37,6 @@
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_NullItems_loc" xlink:to="kvk_NullItems_label_en"/>
 	<link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_DocumentEntityInformationTitle" xlink:label="kvk_DocumentEntityInformationTitle_loc"/>
     <link:label xlink:type="resource" xlink:label="kvk_DocumentEntityInformationTitle_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Document and entity information</link:label>
-    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_DocumentEntityInformationTitle_loc" xlink:to="kvk_DocumentEntityInformationTitle_label_nl"/>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_DocumentEntityInformationTitle_loc" xlink:to="kvk_DocumentEntityInformationTitle_label_en"/>
   </link:labelLink>
 </link:linkbase>
