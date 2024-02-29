@@ -5,10 +5,17 @@
   <link:roleRef roleURI="https://www.nltaxonomie.nl/kvk/role/items-separate-fs" xlink:type="simple" xlink:href="kvk-annual-report-nlgaap-ext.xsd#kvk-role-items-separate-fs"/>
   <link:roleRef roleURI="https://www.nltaxonomie.nl/kvk/role/items-dimensional" xlink:type="simple" xlink:href="kvk-annual-report-nlgaap-ext.xsd#kvk-role-items-dimensional"/>
   <link:roleRef roleURI="https://www.nltaxonomie.nl/kvk/role/items-nondimensional" xlink:type="simple" xlink:href="kvk-annual-report-nlgaap-ext.xsd#kvk-role-items-nondimensional"/>
+  <link:roleRef roleURI="https://www.nltaxonomie.nl/kvk/role/axis-defaults" xlink:type="simple" xlink:href="kvk-annual-report-nlgaap-ext.xsd#kvk-role-axis-defaults"/>
   <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/all" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all"/>
   <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"/>
   <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"/>
   <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-default" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default"/>
+  <link:definitionLink xlink:type="extended" xlink:role="https://www.nltaxonomie.nl/kvk/role/axis-defaults">
+    <link:loc xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_ClassesOfEquityAxis" xlink:label="bw2-titel9_ClassesOfEquityAxis_loc" xlink:type="locator"/>
+    <link:loc xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_EquityMember" xlink:label="bw2-titel9_EquityMember_loc" xlink:type="locator"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default" xlink:from="bw2-titel9_ClassesOfEquityAxis_loc" xlink:to="bw2-titel9_EquityMember_loc"/>
+   </link:definitionLink>
   <link:definitionLink xlink:type="extended" xlink:role="https://www.nltaxonomie.nl/kvk/role/items-consolidated-fs">
     <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_ItemsInConsolidatedFinancialStatementsPlaceholder" xlink:label="kvk_ItemsInConsolidatedFinancialStatementsPlaceholder_loc"/>
     <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor.xsd#bw2-titel9_FinancialStatementsTypeTable" xlink:label="bw2-titel9_FinancialStatementsTypeTable_loc"/>
