@@ -38,8 +38,6 @@
     <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_NullItems" xlink:label="kvk_NullItems_loc"/>
     <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_NullHypercube" xlink:label="kvk_NullHypercube_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="kvk_NullItems_loc" xlink:to="kvk_NullHypercube_loc" order="1.0" xbrldt:contextElement="scenario" xbrldt:closed="true"/>
-    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_NullDimension" xlink:label="kvk_NullDimension_loc"/>
-    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="kvk_NullHypercube_loc" xlink:to="kvk_NullDimension_loc" order="1.0"/>
     <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_TitleOfTheDocument" xlink:label="kvk_TitleOfTheDocument_loc"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_NullItems_loc" xlink:to="kvk_TitleOfTheDocument_loc" order="2.0"/>
     <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_BusinessNames" xlink:label="kvk_BusinessNames_loc"/>
