@@ -339,7 +339,34 @@ http://xbrl.org/2010/message/validation http://www.xbrl.org/2010/validation-mess
 
 	<va:valueAssertion aspectModel="dimensional" id="value_LegalEntitySize" implicitFiltering="true" test="$varArc_value_LegalEntitySize eq true()" xlink:label="value_LegalEntitySize" xlink:type="resource"/>
     <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="value_LegalEntitySize" xlink:to="ERROR_loc" xlink:type="arc"/>
-    <variable:variableArc name="varArc_value_LegalEntitySize" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="value_LegalEntitySize" xlink:to="var_existsOnlyOnce_LegalEntitySize" xlink:type="arc"/>
+    <variable:factVariable bindAsSequence="false" id="var_value_LegalEntitySize" matches="false" nils="false" xlink:label="var_value_LegalEntitySize" xlink:type="resource"/>
+    <variable:variableArc name="varArc_value_LegalEntitySize" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="value_LegalEntitySize" xlink:to="var_value_LegalEntitySize" xlink:type="arc"/>
+    <bf:orFilter id="booleanfilter_value_LegalEntitySize" xlink:label="booleanfilter_value_LegalEntitySize" xlink:type="resource"/>
+    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_value_LegalEntitySize" xlink:to="booleanfilter_value_LegalEntitySize" xlink:type="arc"/>
+	<cf:conceptName id="filter_value_LegalEntitySizeMicro" xlink:label="filter_value_LegalEntitySizeMicro" xlink:type="resource">
+      <cf:concept>
+        <cf:qname>kvk:LegalEntitySizeMicro</cf:qname>
+      </cf:concept>
+    </cf:conceptName>	
+    <cf:conceptName id="filter_value_LegalEntitySizeSmall" xlink:label="filter_value_LegalEntitySizeSmall" xlink:type="resource">
+      <cf:concept>
+        <cf:qname>kvk:LegalEntitySizeSmall</cf:qname>
+      </cf:concept>
+    </cf:conceptName>
+    <cf:conceptName id="filter_value_LegalEntitySizeMedium" xlink:label="filter_value_LegalEntitySizeMedium" xlink:type="resource">
+      <cf:concept>
+        <cf:qname>kvk:LegalEntitySizeMedium</cf:qname>
+      </cf:concept>
+    </cf:conceptName>
+	<cf:conceptName id="filter_value_LegalEntitySizeLarge" xlink:label="filter_value_LegalEntitySizeLarge" xlink:type="resource">
+      <cf:concept>
+        <cf:qname>kvk:LegalEntitySizeLarge</cf:qname>
+      </cf:concept>
+    </cf:conceptName>
+    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_value_LegalEntitySize" xlink:to="filter_value_LegalEntitySizeMicro" xlink:type="arc"/>
+    <variable:variableFilterArc complement="false" cover="true" order="2" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_value_LegalEntitySize" xlink:to="filter_value_LegalEntitySizeSmall" xlink:type="arc"/>
+    <variable:variableFilterArc complement="false" cover="true" order="3" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_value_LegalEntitySize" xlink:to="filter_value_LegalEntitySizeMedium" xlink:type="arc"/>
+    <variable:variableFilterArc complement="false" cover="true" order="4" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_value_LegalEntitySize" xlink:to="filter_value_LegalEntitySizeLarge" xlink:type="arc"/>
     <label:label id="value_LegalEntitySize_label_nl" xlink:label="value_LegalEntitySize_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">'LegalEntitySizeMicro' of 'LegalEntitySizeSmall' of 'LegalEntitySizeMedium' of 'LegalEntitySizeLarge' MOET de waarde 'true' hebben.</label:label>
     <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="value_LegalEntitySize" xlink:to="value_LegalEntitySize_label_nl" xlink:type="arc"/>
     <label:label id="value_LegalEntitySize_label_en" xlink:label="value_LegalEntitySize_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">'LegalEntitySizeMicro' or 'LegalEntitySizeSmall' or 'LegalEntitySizeMedium' or 'LegalEntitySizeLarge' MUST be reported with the value 'true'.</label:label>
