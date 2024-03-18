@@ -20,7 +20,7 @@
         <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.nltaxonomie.nl/kvk/role/items-nondimensional" id="kvk-role-items-nondimensional">
-        <link:definition>[990080] Items to be reported as non-dimensional (default dimensional use is prevented)</link:definition>
+        <link:definition>[990080] Items to be reported as non-dimensional (dimensional use is prevented)</link:definition>
         <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
       <link:roleType roleURI="https://www.nltaxonomie.nl/kvk/role/items-dimensional" id="kvk-role-items-dimensional">
@@ -35,4 +35,6 @@
   </xsd:annotation>
   <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
   <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xsd:import namespace="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" schemaLocation="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd"/>
+  <xsd:import namespace="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor" schemaLocation="kvk-cor.xsd"/>
 </xsd:schema>
