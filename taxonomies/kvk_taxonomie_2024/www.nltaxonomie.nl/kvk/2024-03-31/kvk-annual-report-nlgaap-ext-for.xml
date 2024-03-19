@@ -1,380 +1,311 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<link:linkbase 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xmlns:bw2-titel9="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor" 
-xmlns:rj="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" 
-xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor" 
-xmlns:ca="http://xbrl.org/2008/assertion/consistency" 
-xmlns:gen="http://xbrl.org/2008/generic" 
-xmlns:fn="http://www.w3.org/2005/xpath-functions" 
-xmlns:sf="http://xbrl.org/2008/filter/segment-scenario" 
-xmlns:variable="http://xbrl.org/2008/variable" 
-xmlns:xfi="http://www.xbrl.org/2008/function/instance" 
-xmlns:xff="http://www.xbrl.org/2010/function/formula" 
-xmlns:cf="http://xbrl.org/2008/filter/concept" 
-xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-xmlns:valm="http://xbrl.org/2010/message/validation" 
-xmlns:mf="http://xbrl.org/2008/filter/match" 
-xmlns:link="http://www.xbrl.org/2003/linkbase" 
-xmlns:ea="http://xbrl.org/2008/assertion/existence" 
-xmlns:df="http://xbrl.org/2008/filter/dimension" 
-xmlns:num="http://www.xbrl.org/dtr/type/numeric" 
-xmlns:uf="http://xbrl.org/2008/filter/unit" 
-xmlns:xlink="http://www.w3.org/1999/xlink" 
-xmlns:rf="http://xbrl.org/2008/filter/relative" 
-xmlns:validation="http://xbrl.org/2008/validation" 
-xmlns:pf="http://xbrl.org/2008/filter/period" 
-xmlns:formula="http://xbrl.org/2008/formula" 
-xmlns:msg="http://xbrl.org/2010/message" 
-xmlns:va="http://xbrl.org/2008/assertion/value" 
-xmlns:vf="http://xbrl.org/2008/filter/value" 
-xmlns:label="http://xbrl.org/2008/label" 
-xmlns:gf="http://xbrl.org/2008/filter/general" 
-xmlns:crf="http://xbrl.org/2010/filter/concept-relation" 
-xmlns:bf="http://xbrl.org/2008/filter/boolean" 
-xmlns:xbrli="http://www.xbrl.org/2003/instance" 
-xmlns:ifrs-full="https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full" 
-xsi:schemaLocation="http://xbrl.org/2010/custom-function http://www.xbrl.org/2010/custom-function-implementation.xsd 
-http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd 
-http://xbrl.org/2008/generic http://www.xbrl.org/2008/generic-link.xsd 
-http://xbrl.org/2008/formula http://www.xbrl.org/2008/formula.xsd 
-http://xbrl.org/2008/label http://www.xbrl.org/2008/generic-label.xsd 
-http://xbrl.org/2008/reference http://www.xbrl.org/2008/generic-reference.xsd 
-http://xbrl.org/2008/filter/concept http://www.xbrl.org/2008/concept-filter.xsd 
-http://xbrl.org/2008/filter/dimension http://www.xbrl.org/2008/dimension-filter.xsd 
-http://xbrl.org/2008/filter/entity http://www.xbrl.org/2008/entity-filter.xsd 
-http://xbrl.org/2008/filter/general http://www.xbrl.org/2008/general-filter.xsd 
-http://xbrl.org/2008/filter/match http://www.xbrl.org/2008/match-filter.xsd 
-http://xbrl.org/2008/filter/period http://www.xbrl.org/2008/period-filter.xsd 
-http://xbrl.org/2008/filter/relative http://www.xbrl.org/2008/relative-filter.xsd 
-http://xbrl.org/2008/filter/segment-scenario http://www.xbrl.org/2008/segment-scenario-filter.xsd 
-http://xbrl.org/2008/filter/unit http://www.xbrl.org/2008/unit-filter.xsd 
-http://xbrl.org/2008/filter/value http://www.xbrl.org/2008/value-filter.xsd 
-http://xbrl.org/2008/assertion/consistency http://www.xbrl.org/2008/consistency-assertion.xsd 
-http://xbrl.org/2008/assertion/existence http://www.xbrl.org/2008/existence-assertion.xsd 
-http://xbrl.org/2008/assertion/value http://www.xbrl.org/2008/value-assertion.xsd 
-http://xbrl.org/2010/filter/concept-relation http://www.xbrl.org/2010/concept-relation-filter.xsd 
-http://xbrl.org/2008/filter/boolean http://www.xbrl.org/2008/boolean-filter.xsd
-http://xbrl.org/2010/message http://www.xbrl.org/2010/generic-message.xsd 
-http://xbrl.org/2010/message/validation http://www.xbrl.org/2010/validation-message.xsd">
-  <link:roleRef roleURI="http://www.xbrl.org/2008/role/label" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#standard-label" xlink:type="simple"/>
-  <link:roleRef roleURI="http://www.xbrl.org/2010/role/message" xlink:href="http://www.xbrl.org/2010/generic-message.xsd#standard-message" xlink:type="simple"/>
-  <link:roleRef roleURI="https://www.nltaxonomie.nl/kvk/role/business-rules-mandatory-facts" xlink:href="kvk-annual-report-nlgaap-ext.xsd#kvk-role-business-rules-mandatory-facts" xlink:type="simple"/>
-  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/element-label" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#element-label" xlink:type="simple"/>
-  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-filter" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-filter" xlink:type="simple"/>
-  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-set-precondition" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-set-precondition" xlink:type="simple"/>
-  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-set" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-set" xlink:type="simple"/>
-  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/boolean-filter" xlink:href="http://www.xbrl.org/2008/boolean-filter.xsd#boolean-filter" xlink:type="simple"/>
-  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:href="http://www.xbrl.org/2010/validation-message.xsd#assertion-unsatisfied-message" xlink:type="simple"/>
-  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:href="http://www.xbrl.org/2016/assertion-severity.xsd#assertion-unsatisfied-severity" xlink:type="simple"/>
-  <gen:link xlink:role="https://www.nltaxonomie.nl/kvk/role/business-rules-mandatory-facts" xlink:type="extended">
-    <link:loc xlink:href="http://www.xbrl.org/2016/severities.xml#ERROR" xlink:label="ERROR_loc" xlink:type="locator"/>
-    <ea:existenceAssertion aspectModel="dimensional" id="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" implicitFiltering="true" test=". eq 1" xlink:label="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:type="resource"/>
-    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="ERROR_loc" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="false" id="var_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" matches="false" nils="false" xlink:label="var_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:type="resource"/>
-    <variable:variableArc name="varArc_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="var_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:type="arc"/>
-    <cf:conceptName id="filter_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:label="filter_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:type="resource">
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated by Fujitsu Interstage XWand B0255 -->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2010/custom-function http://www.xbrl.org/2010/custom-function-implementation.xsd http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd http://xbrl.org/2008/generic http://www.xbrl.org/2008/generic-link.xsd http://xbrl.org/2008/formula http://www.xbrl.org/2008/formula.xsd http://xbrl.org/2008/label http://www.xbrl.org/2008/generic-label.xsd http://xbrl.org/2008/reference http://www.xbrl.org/2008/generic-reference.xsd http://xbrl.org/2008/filter/concept http://www.xbrl.org/2008/concept-filter.xsd http://xbrl.org/2008/filter/dimension http://www.xbrl.org/2008/dimension-filter.xsd http://xbrl.org/2008/filter/entity http://www.xbrl.org/2008/entity-filter.xsd http://xbrl.org/2008/filter/general http://www.xbrl.org/2008/general-filter.xsd http://xbrl.org/2008/filter/match http://www.xbrl.org/2008/match-filter.xsd http://xbrl.org/2008/filter/period http://www.xbrl.org/2008/period-filter.xsd http://xbrl.org/2008/filter/relative http://www.xbrl.org/2008/relative-filter.xsd http://xbrl.org/2008/filter/segment-scenario http://www.xbrl.org/2008/segment-scenario-filter.xsd http://xbrl.org/2008/filter/unit http://www.xbrl.org/2008/unit-filter.xsd http://xbrl.org/2008/filter/value http://www.xbrl.org/2008/value-filter.xsd http://xbrl.org/2008/assertion/consistency http://www.xbrl.org/2008/consistency-assertion.xsd http://xbrl.org/2008/assertion/existence http://www.xbrl.org/2008/existence-assertion.xsd http://xbrl.org/2008/assertion/value http://www.xbrl.org/2008/value-assertion.xsd http://xbrl.org/2010/filter/concept-relation http://www.xbrl.org/2010/concept-relation-filter.xsd http://xbrl.org/2008/filter/boolean http://www.xbrl.org/2008/boolean-filter.xsd http://xbrl.org/2010/message http://www.xbrl.org/2010/generic-message.xsd http://xbrl.org/2010/message/validation http://www.xbrl.org/2010/validation-message.xsd" xmlns:ca="http://xbrl.org/2008/assertion/consistency" xmlns:xff="http://www.xbrl.org/2010/function/formula" xmlns:gen="http://xbrl.org/2008/generic" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:sf="http://xbrl.org/2008/filter/segment-scenario" xmlns:variable="http://xbrl.org/2008/variable" xmlns:xfi="http://www.xbrl.org/2008/function/instance" xmlns:cf="http://xbrl.org/2008/filter/concept" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:valm="http://xbrl.org/2010/message/validation" xmlns:mf="http://xbrl.org/2008/filter/match" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ea="http://xbrl.org/2008/assertion/existence" xmlns:kvk="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor" xmlns:ifrs-full="https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:df="http://xbrl.org/2008/filter/dimension" xmlns:bw2-titel9="https://www.nltaxonomie.nl/jenv/2024-03-31/bw2-titel9-cor" xmlns:rf="http://xbrl.org/2008/filter/relative" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:uf="http://xbrl.org/2008/filter/unit" xmlns:validation="http://xbrl.org/2008/validation" xmlns:pf="http://xbrl.org/2008/filter/period" xmlns:formula="http://xbrl.org/2008/formula" xmlns:msg="http://xbrl.org/2010/message" xmlns:vf="http://xbrl.org/2008/filter/value" xmlns:va="http://xbrl.org/2008/assertion/value" xmlns:rj="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" xmlns:label="http://xbrl.org/2008/label" xmlns:gf="http://xbrl.org/2008/filter/general" xmlns:bf="http://xbrl.org/2008/filter/boolean" xmlns:crf="http://xbrl.org/2010/filter/concept-relation" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <link:roleRef roleURI="http://www.xbrl.org/2008/role/label" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#standard-label"/>
+  <link:roleRef roleURI="http://www.xbrl.org/2010/role/message" xlink:type="simple" xlink:href="http://www.xbrl.org/2010/generic-message.xsd#standard-message"/>
+  <link:roleRef roleURI="https://www.nltaxonomie.nl/kvk/role/business-rules-mandatory-facts" xlink:type="simple" xlink:href="kvk-annual-report-nlgaap-ext.xsd#kvk-role-business-rules-mandatory-facts"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/element-label" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#element-label"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-filter" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-filter"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-set-precondition" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-set-precondition"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-set" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-set"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/boolean-filter" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/boolean-filter.xsd#boolean-filter"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:type="simple" xlink:href="http://www.xbrl.org/2010/validation-message.xsd#assertion-unsatisfied-message"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:type="simple" xlink:href="http://www.xbrl.org/2016/assertion-severity.xsd#assertion-unsatisfied-severity"/>
+  <gen:link xlink:type="extended" xlink:role="https://www.nltaxonomie.nl/kvk/role/business-rules-mandatory-facts">
+    <ea:existenceAssertion xlink:type="resource" xlink:label="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" id="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" aspectModel="dimensional" implicitFiltering="true" test=". eq 1"/>
+    <link:loc xlink:type="locator" xlink:href="http://www.xbrl.org/2016/severities.xml#ERROR" xlink:label="ERROR_loc"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="ERROR_loc"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" id="var_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" bindAsSequence="false" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="var_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" priority="0" order="1.0" name="varArc_existsOnlyOnce_ChamberOfCommerceRegistrationNumber"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" id="filter_existsOnlyOnce_ChamberOfCommerceRegistrationNumber">
       <cf:concept>
         <cf:qname>bw2-titel9:ChamberOfCommerceRegistrationNumber</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="filter_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_label_nl" xlink:label="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">'ChamberOfCommerceRegistrationNumber' MOET exact één keer voorkomen.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_label_nl" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_label_en" xlink:label="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">'ChamberOfCommerceRegistrationNumber' MUST exist only once.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_label_en" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_assertion-unsatisfied-message_nl" xlink:label="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="nl">'ChamberOfCommerceRegistrationNumber' MOET exact één keer voorkomen.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_assertion-unsatisfied-message_nl" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_assertion-unsatisfied-message_en" xlink:label="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="en">'ChamberOfCommerceRegistrationNumber' MUST exist only once.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_assertion-unsatisfied-message_en" xlink:type="arc"/>
-
-    <ea:existenceAssertion aspectModel="dimensional" id="existsOnlyOnce_LegalEntityName" implicitFiltering="true" test=". eq 1" xlink:label="existsOnlyOnce_LegalEntityName" xlink:type="resource"/>
-    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_LegalEntityName" xlink:to="ERROR_loc" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="false" id="var_existsOnlyOnce_LegalEntityName" matches="false" nils="false" xlink:label="var_existsOnlyOnce_LegalEntityName" xlink:type="resource"/>
-    <variable:variableArc name="varArc_existsOnlyOnce_LegalEntityName" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_LegalEntityName" xlink:to="var_existsOnlyOnce_LegalEntityName" xlink:type="arc"/>
-    <cf:conceptName id="filter_existsOnlyOnce_LegalEntityName" xlink:label="filter_existsOnlyOnce_LegalEntityName" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="filter_existsOnlyOnce_ChamberOfCommerceRegistrationNumber" priority="0" order="1.0" complement="false" cover="true"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_label_nl">'ChamberOfCommerceRegistrationNumber' MOET exact één keer voorkomen.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_label_nl" order="1.0"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_label_en">'ChamberOfCommerceRegistrationNumber' MUST exist only once.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_label_en" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="nl" id="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_assertion-unsatisfied-message_nl">'ChamberOfCommerceRegistrationNumber' MOET exact één keer voorkomen.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_assertion-unsatisfied-message_nl" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="en" id="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_assertion-unsatisfied-message_en">'ChamberOfCommerceRegistrationNumber' MUST exist only once.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_ChamberOfCommerceRegistrationNumber" xlink:to="existsOnlyOnce_ChamberOfCommerceRegistrationNumber_assertion-unsatisfied-message_en" order="1.0"/>
+    <ea:existenceAssertion xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityName" id="existsOnlyOnce_LegalEntityName" aspectModel="dimensional" implicitFiltering="true" test=". eq 1"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_LegalEntityName" xlink:to="ERROR_loc"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_existsOnlyOnce_LegalEntityName" id="var_existsOnlyOnce_LegalEntityName" bindAsSequence="false" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_LegalEntityName" xlink:to="var_existsOnlyOnce_LegalEntityName" priority="0" order="1.0" name="varArc_existsOnlyOnce_LegalEntityName"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsOnlyOnce_LegalEntityName" id="filter_existsOnlyOnce_LegalEntityName">
       <cf:concept>
         <cf:qname>bw2-titel9:LegalEntityName</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_LegalEntityName" xlink:to="filter_existsOnlyOnce_LegalEntityName" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_LegalEntityName_label_nl" xlink:label="existsOnlyOnce_LegalEntityName_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">'LegalEntityName' MOET exact één keer voorkomen.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntityName" xlink:to="existsOnlyOnce_LegalEntityName_label_nl" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_LegalEntityName_label_en" xlink:label="existsOnlyOnce_LegalEntityName_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">'LegalEntityName' MUST exist only once.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntityName" xlink:to="existsOnlyOnce_LegalEntityName_label_en" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_LegalEntityName_assertion-unsatisfied-message_nl" xlink:label="existsOnlyOnce_LegalEntityName_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="nl">'LegalEntityName' MOET exact één keer voorkomen.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntityName" xlink:to="existsOnlyOnce_LegalEntityName_assertion-unsatisfied-message_nl" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_LegalEntityName_assertion-unsatisfied-message_en" xlink:label="existsOnlyOnce_LegalEntityName_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="en">'LegalEntityName' MUST exist only once.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntityName" xlink:to="existsOnlyOnce_LegalEntityName_assertion-unsatisfied-message_en" xlink:type="arc"/>
-
-    <ea:existenceAssertion aspectModel="dimensional" id="existsOnlyOnce_LegalEntityRegisteredOffice" implicitFiltering="true" test=". eq 1" xlink:label="existsOnlyOnce_LegalEntityRegisteredOffice" xlink:type="resource"/>
-    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="ERROR_loc" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="false" id="var_existsOnlyOnce_LegalEntityRegisteredOffice" matches="false" nils="false" xlink:label="var_existsOnlyOnce_LegalEntityRegisteredOffice" xlink:type="resource"/>
-    <variable:variableArc name="varArc_existsOnlyOnce_LegalEntityRegisteredOffice" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="var_existsOnlyOnce_LegalEntityRegisteredOffice" xlink:type="arc"/>
-    <cf:conceptName id="filter_existsOnlyOnce_LegalEntityRegisteredOffice" xlink:label="filter_existsOnlyOnce_LegalEntityRegisteredOffice" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_LegalEntityName" xlink:to="filter_existsOnlyOnce_LegalEntityName" priority="0" order="1.0" complement="false" cover="true"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityName_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="existsOnlyOnce_LegalEntityName_label_nl">'LegalEntityName' MOET exact één keer voorkomen.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntityName" xlink:to="existsOnlyOnce_LegalEntityName_label_nl" order="1.0"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityName_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="existsOnlyOnce_LegalEntityName_label_en">'LegalEntityName' MUST exist only once.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntityName" xlink:to="existsOnlyOnce_LegalEntityName_label_en" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityName_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="nl" id="existsOnlyOnce_LegalEntityName_assertion-unsatisfied-message_nl">'LegalEntityName' MOET exact één keer voorkomen.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntityName" xlink:to="existsOnlyOnce_LegalEntityName_assertion-unsatisfied-message_nl" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityName_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="en" id="existsOnlyOnce_LegalEntityName_assertion-unsatisfied-message_en">'LegalEntityName' MUST exist only once.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntityName" xlink:to="existsOnlyOnce_LegalEntityName_assertion-unsatisfied-message_en" order="1.0"/>
+    <ea:existenceAssertion xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityRegisteredOffice" id="existsOnlyOnce_LegalEntityRegisteredOffice" aspectModel="dimensional" implicitFiltering="true" test=". eq 1"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="ERROR_loc"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_existsOnlyOnce_LegalEntityRegisteredOffice" id="var_existsOnlyOnce_LegalEntityRegisteredOffice" bindAsSequence="false" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="var_existsOnlyOnce_LegalEntityRegisteredOffice" priority="0" order="1.0" name="varArc_existsOnlyOnce_LegalEntityRegisteredOffice"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsOnlyOnce_LegalEntityRegisteredOffice" id="filter_existsOnlyOnce_LegalEntityRegisteredOffice">
       <cf:concept>
         <cf:qname>bw2-titel9:LegalEntityRegisteredOffice</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="filter_existsOnlyOnce_LegalEntityRegisteredOffice" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_LegalEntityRegisteredOffice_label_nl" xlink:label="existsOnlyOnce_LegalEntityRegisteredOffice_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">'LegalEntityRegisteredOffice' MOET exact één keer voorkomen.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="existsOnlyOnce_LegalEntityRegisteredOffice_label_nl" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_LegalEntityRegisteredOffice_label_en" xlink:label="existsOnlyOnce_LegalEntityRegisteredOffice_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">'LegalEntityRegisteredOffice' MUST exist only once.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="existsOnlyOnce_LegalEntityRegisteredOffice_label_en" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_LegalEntityRegisteredOffice_assertion-unsatisfied-message_nl" xlink:label="existsOnlyOnce_LegalEntityRegisteredOffice_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="nl">'LegalEntityRegisteredOffice' MOET exact één keer voorkomen.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="existsOnlyOnce_LegalEntityRegisteredOffice_assertion-unsatisfied-message_nl" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_LegalEntityRegisteredOffice_assertion-unsatisfied-message_en" xlink:label="existsOnlyOnce_LegalEntityRegisteredOffice_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="en">'LegalEntityRegisteredOffice' MUST exist only once.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="existsOnlyOnce_LegalEntityRegisteredOffice_assertion-unsatisfied-message_en" xlink:type="arc"/>
-
-    <ea:existenceAssertion aspectModel="dimensional" id="existsOnlyOnce_LegalEntityLegalForm" implicitFiltering="true" test=". eq 1" xlink:label="existsOnlyOnce_LegalEntityLegalForm" xlink:type="resource"/>
-    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_LegalEntityLegalForm" xlink:to="ERROR_loc" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="false" id="var_existsOnlyOnce_LegalEntityLegalForm" matches="false" nils="false" xlink:label="var_existsOnlyOnce_LegalEntityLegalForm" xlink:type="resource"/>
-    <variable:variableArc name="varArc_existsOnlyOnce_LegalEntityLegalForm" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_LegalEntityLegalForm" xlink:to="var_existsOnlyOnce_LegalEntityLegalForm" xlink:type="arc"/>
-    <cf:conceptName id="filter_existsOnlyOnce_LegalEntityLegalForm" xlink:label="filter_existsOnlyOnce_LegalEntityLegalForm" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="filter_existsOnlyOnce_LegalEntityRegisteredOffice" priority="0" order="1.0" complement="false" cover="true"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityRegisteredOffice_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="existsOnlyOnce_LegalEntityRegisteredOffice_label_nl">'LegalEntityRegisteredOffice' MOET exact één keer voorkomen.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="existsOnlyOnce_LegalEntityRegisteredOffice_label_nl" order="1.0"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityRegisteredOffice_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="existsOnlyOnce_LegalEntityRegisteredOffice_label_en">'LegalEntityRegisteredOffice' MUST exist only once.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="existsOnlyOnce_LegalEntityRegisteredOffice_label_en" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityRegisteredOffice_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="nl" id="existsOnlyOnce_LegalEntityRegisteredOffice_assertion-unsatisfied-message_nl">'LegalEntityRegisteredOffice' MOET exact één keer voorkomen.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="existsOnlyOnce_LegalEntityRegisteredOffice_assertion-unsatisfied-message_nl" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityRegisteredOffice_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="en" id="existsOnlyOnce_LegalEntityRegisteredOffice_assertion-unsatisfied-message_en">'LegalEntityRegisteredOffice' MUST exist only once.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntityRegisteredOffice" xlink:to="existsOnlyOnce_LegalEntityRegisteredOffice_assertion-unsatisfied-message_en" order="1.0"/>
+    <ea:existenceAssertion xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityLegalForm" id="existsOnlyOnce_LegalEntityLegalForm" aspectModel="dimensional" implicitFiltering="true" test=". eq 1"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_LegalEntityLegalForm" xlink:to="ERROR_loc"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_existsOnlyOnce_LegalEntityLegalForm" id="var_existsOnlyOnce_LegalEntityLegalForm" bindAsSequence="false" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_LegalEntityLegalForm" xlink:to="var_existsOnlyOnce_LegalEntityLegalForm" priority="0" order="1.0" name="varArc_existsOnlyOnce_LegalEntityLegalForm"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsOnlyOnce_LegalEntityLegalForm" id="filter_existsOnlyOnce_LegalEntityLegalForm">
       <cf:concept>
         <cf:qname>bw2-titel9:LegalEntityLegalForm</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_LegalEntityLegalForm" xlink:to="filter_existsOnlyOnce_LegalEntityLegalForm" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_LegalEntityLegalForm_label_nl" xlink:label="existsOnlyOnce_LegalEntityLegalForm_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">'LegalEntityLegalForm' MOET exact één keer voorkomen.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntityLegalForm" xlink:to="existsOnlyOnce_LegalEntityLegalForm_label_nl" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_LegalEntityLegalForm_label_en" xlink:label="existsOnlyOnce_LegalEntityLegalForm_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">'LegalEntityLegalForm' MUST exist only once.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntityLegalForm" xlink:to="existsOnlyOnce_LegalEntityLegalForm_label_en" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_LegalEntityLegalForm_assertion-unsatisfied-message_nl" xlink:label="existsOnlyOnce_LegalEntityLegalForm_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="nl">'LegalEntityLegalForm' MOET exact één keer voorkomen.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntityLegalForm" xlink:to="existsOnlyOnce_LegalEntityLegalForm_assertion-unsatisfied-message_nl" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_LegalEntityLegalForm_assertion-unsatisfied-message_en" xlink:label="existsOnlyOnce_LegalEntityLegalForm_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="en">'LegalEntityLegalForm' MUST exist only once.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntityLegalForm" xlink:to="existsOnlyOnce_LegalEntityLegalForm_assertion-unsatisfied-message_en" xlink:type="arc"/>
-
-    <ea:existenceAssertion aspectModel="dimensional" id="existsOnlyOnce_FinancialReportingPeriodEndDate" implicitFiltering="true" test=". eq 1" xlink:label="existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:type="resource"/>
-    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="ERROR_loc" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="false" id="var_existsOnlyOnce_FinancialReportingPeriodEndDate" matches="false" nils="false" xlink:label="var_existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:type="resource"/>
-    <variable:variableArc name="varArc_existsOnlyOnce_FinancialReportingPeriodEndDate" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="var_existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:type="arc"/>
-    <cf:conceptName id="filter_existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:label="filter_existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_LegalEntityLegalForm" xlink:to="filter_existsOnlyOnce_LegalEntityLegalForm" priority="0" order="1.0" complement="false" cover="true"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityLegalForm_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="existsOnlyOnce_LegalEntityLegalForm_label_nl">'LegalEntityLegalForm' MOET exact één keer voorkomen.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntityLegalForm" xlink:to="existsOnlyOnce_LegalEntityLegalForm_label_nl" order="1.0"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityLegalForm_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="existsOnlyOnce_LegalEntityLegalForm_label_en">'LegalEntityLegalForm' MUST exist only once.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntityLegalForm" xlink:to="existsOnlyOnce_LegalEntityLegalForm_label_en" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityLegalForm_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="nl" id="existsOnlyOnce_LegalEntityLegalForm_assertion-unsatisfied-message_nl">'LegalEntityLegalForm' MOET exact één keer voorkomen.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntityLegalForm" xlink:to="existsOnlyOnce_LegalEntityLegalForm_assertion-unsatisfied-message_nl" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntityLegalForm_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="en" id="existsOnlyOnce_LegalEntityLegalForm_assertion-unsatisfied-message_en">'LegalEntityLegalForm' MUST exist only once.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntityLegalForm" xlink:to="existsOnlyOnce_LegalEntityLegalForm_assertion-unsatisfied-message_en" order="1.0"/>
+    <ea:existenceAssertion xlink:type="resource" xlink:label="existsOnlyOnce_FinancialReportingPeriodEndDate" id="existsOnlyOnce_FinancialReportingPeriodEndDate" aspectModel="dimensional" implicitFiltering="true" test=". eq 1"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="ERROR_loc"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_existsOnlyOnce_FinancialReportingPeriodEndDate" id="var_existsOnlyOnce_FinancialReportingPeriodEndDate" bindAsSequence="false" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="var_existsOnlyOnce_FinancialReportingPeriodEndDate" priority="0" order="1.0" name="varArc_existsOnlyOnce_FinancialReportingPeriodEndDate"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsOnlyOnce_FinancialReportingPeriodEndDate" id="filter_existsOnlyOnce_FinancialReportingPeriodEndDate">
       <cf:concept>
         <cf:qname>bw2-titel9:FinancialReportingPeriodEndDate</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="filter_existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_FinancialReportingPeriodEndDate_label_nl" xlink:label="existsOnlyOnce_FinancialReportingPeriodEndDate_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">'FinancialReportingPeriodEndDate' MOET exact één keer voorkomen.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="existsOnlyOnce_FinancialReportingPeriodEndDate_label_nl" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_FinancialReportingPeriodEndDate_label_en" xlink:label="existsOnlyOnce_FinancialReportingPeriodEndDate_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">'FinancialReportingPeriodEndDate' MUST exist only once.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="existsOnlyOnce_FinancialReportingPeriodEndDate_label_en" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_FinancialReportingPeriodEndDate_assertion-unsatisfied-message_nl" xlink:label="existsOnlyOnce_FinancialReportingPeriodEndDate_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="nl">'FinancialReportingPeriodEndDate' MOET exact één keer voorkomen.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="existsOnlyOnce_FinancialReportingPeriodEndDate_assertion-unsatisfied-message_nl" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_FinancialReportingPeriodEndDate_assertion-unsatisfied-message_en" xlink:label="existsOnlyOnce_FinancialReportingPeriodEndDate_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="en">'FinancialReportingPeriodEndDate' MUST exist only once.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="existsOnlyOnce_FinancialReportingPeriodEndDate_assertion-unsatisfied-message_en" xlink:type="arc"/>
-
-    <ea:existenceAssertion aspectModel="dimensional" id="existsOnlyOnce_FinancialReportingPeriod" implicitFiltering="true" test=". eq 1" xlink:label="existsOnlyOnce_FinancialReportingPeriod" xlink:type="resource"/>
-    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_FinancialReportingPeriod" xlink:to="ERROR_loc" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="false" id="var_existsOnlyOnce_FinancialReportingPeriod" matches="false" nils="false" xlink:label="var_existsOnlyOnce_FinancialReportingPeriod" xlink:type="resource"/>
-    <variable:variableArc name="varArc_existsOnlyOnce_FinancialReportingPeriod" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_FinancialReportingPeriod" xlink:to="var_existsOnlyOnce_FinancialReportingPeriod" xlink:type="arc"/>
-    <cf:conceptName id="filter_existsOnlyOnce_FinancialReportingPeriod" xlink:label="filter_existsOnlyOnce_FinancialReportingPeriod" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="filter_existsOnlyOnce_FinancialReportingPeriodEndDate" priority="0" order="1.0" complement="false" cover="true"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_FinancialReportingPeriodEndDate_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="existsOnlyOnce_FinancialReportingPeriodEndDate_label_nl">'FinancialReportingPeriodEndDate' MOET exact één keer voorkomen.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="existsOnlyOnce_FinancialReportingPeriodEndDate_label_nl" order="1.0"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_FinancialReportingPeriodEndDate_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="existsOnlyOnce_FinancialReportingPeriodEndDate_label_en">'FinancialReportingPeriodEndDate' MUST exist only once.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="existsOnlyOnce_FinancialReportingPeriodEndDate_label_en" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_FinancialReportingPeriodEndDate_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="nl" id="existsOnlyOnce_FinancialReportingPeriodEndDate_assertion-unsatisfied-message_nl">'FinancialReportingPeriodEndDate' MOET exact één keer voorkomen.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="existsOnlyOnce_FinancialReportingPeriodEndDate_assertion-unsatisfied-message_nl" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_FinancialReportingPeriodEndDate_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="en" id="existsOnlyOnce_FinancialReportingPeriodEndDate_assertion-unsatisfied-message_en">'FinancialReportingPeriodEndDate' MUST exist only once.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_FinancialReportingPeriodEndDate" xlink:to="existsOnlyOnce_FinancialReportingPeriodEndDate_assertion-unsatisfied-message_en" order="1.0"/>
+    <ea:existenceAssertion xlink:type="resource" xlink:label="existsOnlyOnce_FinancialReportingPeriod" id="existsOnlyOnce_FinancialReportingPeriod" aspectModel="dimensional" implicitFiltering="true" test=". eq 1"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_FinancialReportingPeriod" xlink:to="ERROR_loc"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_existsOnlyOnce_FinancialReportingPeriod" id="var_existsOnlyOnce_FinancialReportingPeriod" bindAsSequence="false" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_FinancialReportingPeriod" xlink:to="var_existsOnlyOnce_FinancialReportingPeriod" priority="0" order="1.0" name="varArc_existsOnlyOnce_FinancialReportingPeriod"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsOnlyOnce_FinancialReportingPeriod" id="filter_existsOnlyOnce_FinancialReportingPeriod">
       <cf:concept>
         <cf:qname>bw2-titel9:FinancialReportingPeriod</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_FinancialReportingPeriod" xlink:to="filter_existsOnlyOnce_FinancialReportingPeriod" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_FinancialReportingPeriod_label_nl" xlink:label="existsOnlyOnce_FinancialReportingPeriod_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">'FinancialReportingPeriod' MOET exact één keer voorkomen.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_FinancialReportingPeriod" xlink:to="existsOnlyOnce_FinancialReportingPeriod_label_nl" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_FinancialReportingPeriod_label_en" xlink:label="existsOnlyOnce_FinancialReportingPeriod_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">'FinancialReportingPeriod' MUST exist only once.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_FinancialReportingPeriod" xlink:to="existsOnlyOnce_FinancialReportingPeriod_label_en" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_FinancialReportingPeriod_assertion-unsatisfied-message_nl" xlink:label="existsOnlyOnce_FinancialReportingPeriod_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="nl">'FinancialReportingPeriod' MOET exact één keer voorkomen.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_FinancialReportingPeriod" xlink:to="existsOnlyOnce_FinancialReportingPeriod_assertion-unsatisfied-message_nl" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_FinancialReportingPeriod_assertion-unsatisfied-message_en" xlink:label="existsOnlyOnce_FinancialReportingPeriod_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="en">'FinancialReportingPeriod' MUST exist only once.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_FinancialReportingPeriod" xlink:to="existsOnlyOnce_FinancialReportingPeriod_assertion-unsatisfied-message_en" xlink:type="arc"/>
-
-    <ea:existenceAssertion aspectModel="dimensional" id="existsOnlyOnce_FinancialStatementsConsolidated" implicitFiltering="true" test=". eq 1" xlink:label="existsOnlyOnce_FinancialStatementsConsolidated" xlink:type="resource"/>
-    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="ERROR_loc" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="false" id="var_existsOnlyOnce_FinancialStatementsConsolidated" matches="false" nils="false" xlink:label="var_existsOnlyOnce_FinancialStatementsConsolidated" xlink:type="resource"/>
-    <variable:variableArc name="varArc_existsOnlyOnce_FinancialStatementsConsolidated" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="var_existsOnlyOnce_FinancialStatementsConsolidated" xlink:type="arc"/>
-    <cf:conceptName id="filter_existsOnlyOnce_FinancialStatementsConsolidated" xlink:label="filter_existsOnlyOnce_FinancialStatementsConsolidated" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_FinancialReportingPeriod" xlink:to="filter_existsOnlyOnce_FinancialReportingPeriod" priority="0" order="1.0" complement="false" cover="true"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_FinancialReportingPeriod_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="existsOnlyOnce_FinancialReportingPeriod_label_nl">'FinancialReportingPeriod' MOET exact één keer voorkomen.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_FinancialReportingPeriod" xlink:to="existsOnlyOnce_FinancialReportingPeriod_label_nl" order="1.0"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_FinancialReportingPeriod_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="existsOnlyOnce_FinancialReportingPeriod_label_en">'FinancialReportingPeriod' MUST exist only once.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_FinancialReportingPeriod" xlink:to="existsOnlyOnce_FinancialReportingPeriod_label_en" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_FinancialReportingPeriod_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="nl" id="existsOnlyOnce_FinancialReportingPeriod_assertion-unsatisfied-message_nl">'FinancialReportingPeriod' MOET exact één keer voorkomen.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_FinancialReportingPeriod" xlink:to="existsOnlyOnce_FinancialReportingPeriod_assertion-unsatisfied-message_nl" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_FinancialReportingPeriod_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="en" id="existsOnlyOnce_FinancialReportingPeriod_assertion-unsatisfied-message_en">'FinancialReportingPeriod' MUST exist only once.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_FinancialReportingPeriod" xlink:to="existsOnlyOnce_FinancialReportingPeriod_assertion-unsatisfied-message_en" order="1.0"/>
+    <ea:existenceAssertion xlink:type="resource" xlink:label="existsOnlyOnce_FinancialStatementsConsolidated" id="existsOnlyOnce_FinancialStatementsConsolidated" aspectModel="dimensional" implicitFiltering="true" test=". eq 1"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="ERROR_loc"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_existsOnlyOnce_FinancialStatementsConsolidated" id="var_existsOnlyOnce_FinancialStatementsConsolidated" bindAsSequence="false" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="var_existsOnlyOnce_FinancialStatementsConsolidated" priority="0" order="1.0" name="varArc_existsOnlyOnce_FinancialStatementsConsolidated"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsOnlyOnce_FinancialStatementsConsolidated" id="filter_existsOnlyOnce_FinancialStatementsConsolidated">
       <cf:concept>
         <cf:qname>rj:FinancialStatementsConsolidated</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="filter_existsOnlyOnce_FinancialStatementsConsolidated" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_FinancialStatementsConsolidated_label_nl" xlink:label="existsOnlyOnce_FinancialStatementsConsolidated_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">'FinancialStatementsConsolidated' MOET exact één keer voorkomen.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="existsOnlyOnce_FinancialStatementsConsolidated_label_nl" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_FinancialStatementsConsolidated_label_en" xlink:label="existsOnlyOnce_FinancialStatementsConsolidated_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">'FinancialStatementsConsolidated' MUST exist only once.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="existsOnlyOnce_FinancialStatementsConsolidated_label_en" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_FinancialStatementsConsolidated_assertion-unsatisfied-message_nl" xlink:label="existsOnlyOnce_FinancialStatementsConsolidated_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="nl">'FinancialStatementsConsolidated' MOET exact één keer voorkomen.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="existsOnlyOnce_FinancialStatementsConsolidated_assertion-unsatisfied-message_nl" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_FinancialStatementsConsolidated_assertion-unsatisfied-message_en" xlink:label="existsOnlyOnce_FinancialStatementsConsolidated_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="en">'FinancialStatementsConsolidated' MUST exist only once.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="existsOnlyOnce_FinancialStatementsConsolidated_assertion-unsatisfied-message_en" xlink:type="arc"/>
-
-    <ea:existenceAssertion aspectModel="dimensional" id="existsOnlyOnce_DocumentAdoptionStatus" implicitFiltering="true" test=". eq 1" xlink:label="existsOnlyOnce_DocumentAdoptionStatus" xlink:type="resource"/>
-    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_DocumentAdoptionStatus" xlink:to="ERROR_loc" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="false" id="var_existsOnlyOnce_DocumentAdoptionStatus" matches="false" nils="false" xlink:label="var_existsOnlyOnce_DocumentAdoptionStatus" xlink:type="resource"/>
-    <variable:variableArc name="varArc_existsOnlyOnce_DocumentAdoptionStatus" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_DocumentAdoptionStatus" xlink:to="var_existsOnlyOnce_DocumentAdoptionStatus" xlink:type="arc"/>
-    <cf:conceptName id="filter_existsOnlyOnce_DocumentAdoptionStatus" xlink:label="filter_existsOnlyOnce_DocumentAdoptionStatus" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="filter_existsOnlyOnce_FinancialStatementsConsolidated" priority="0" order="1.0" complement="false" cover="true"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_FinancialStatementsConsolidated_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="existsOnlyOnce_FinancialStatementsConsolidated_label_nl">'FinancialStatementsConsolidated' MOET exact één keer voorkomen.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="existsOnlyOnce_FinancialStatementsConsolidated_label_nl" order="1.0"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_FinancialStatementsConsolidated_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="existsOnlyOnce_FinancialStatementsConsolidated_label_en">'FinancialStatementsConsolidated' MUST exist only once.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="existsOnlyOnce_FinancialStatementsConsolidated_label_en" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_FinancialStatementsConsolidated_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="nl" id="existsOnlyOnce_FinancialStatementsConsolidated_assertion-unsatisfied-message_nl">'FinancialStatementsConsolidated' MOET exact één keer voorkomen.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="existsOnlyOnce_FinancialStatementsConsolidated_assertion-unsatisfied-message_nl" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_FinancialStatementsConsolidated_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="en" id="existsOnlyOnce_FinancialStatementsConsolidated_assertion-unsatisfied-message_en">'FinancialStatementsConsolidated' MUST exist only once.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_FinancialStatementsConsolidated" xlink:to="existsOnlyOnce_FinancialStatementsConsolidated_assertion-unsatisfied-message_en" order="1.0"/>
+    <ea:existenceAssertion xlink:type="resource" xlink:label="existsOnlyOnce_DocumentAdoptionStatus" id="existsOnlyOnce_DocumentAdoptionStatus" aspectModel="dimensional" implicitFiltering="true" test=". eq 1"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_DocumentAdoptionStatus" xlink:to="ERROR_loc"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_existsOnlyOnce_DocumentAdoptionStatus" id="var_existsOnlyOnce_DocumentAdoptionStatus" bindAsSequence="false" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_DocumentAdoptionStatus" xlink:to="var_existsOnlyOnce_DocumentAdoptionStatus" priority="0" order="1.0" name="varArc_existsOnlyOnce_DocumentAdoptionStatus"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsOnlyOnce_DocumentAdoptionStatus" id="filter_existsOnlyOnce_DocumentAdoptionStatus">
       <cf:concept>
         <cf:qname>bw2-titel9:DocumentAdoptionStatus</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_DocumentAdoptionStatus" xlink:to="filter_existsOnlyOnce_DocumentAdoptionStatus" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_DocumentAdoptionStatus_label_nl" xlink:label="existsOnlyOnce_DocumentAdoptionStatus_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">'DocumentAdoptionStatus' MOET exact één keer voorkomen.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_DocumentAdoptionStatus" xlink:to="existsOnlyOnce_DocumentAdoptionStatus_label_nl" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_DocumentAdoptionStatus_label_en" xlink:label="existsOnlyOnce_DocumentAdoptionStatus_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">'DocumentAdoptionStatus' MUST exist only once.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_DocumentAdoptionStatus" xlink:to="existsOnlyOnce_DocumentAdoptionStatus_label_en" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_DocumentAdoptionStatus_assertion-unsatisfied-message_nl" xlink:label="existsOnlyOnce_DocumentAdoptionStatus_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="nl">'DocumentAdoptionStatus' MOET exact één keer voorkomen.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_DocumentAdoptionStatus" xlink:to="existsOnlyOnce_DocumentAdoptionStatus_assertion-unsatisfied-message_nl" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_DocumentAdoptionStatus_assertion-unsatisfied-message_en" xlink:label="existsOnlyOnce_DocumentAdoptionStatus_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="en">'DocumentAdoptionStatus' MUST exist only once.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_DocumentAdoptionStatus" xlink:to="existsOnlyOnce_DocumentAdoptionStatus_assertion-unsatisfied-message_en" xlink:type="arc"/>
-
-    <ea:existenceAssertion aspectModel="dimensional" id="existsOnceOrLess_DocumentAdoptionDate" implicitFiltering="true" test=". le 1" xlink:label="existsOnceOrLess_DocumentAdoptionDate" xlink:type="resource"/>
-    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnceOrLess_DocumentAdoptionDate" xlink:to="ERROR_loc" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="false" id="var_existsOnceOrLess_DocumentAdoptionDate" matches="false" nils="false" xlink:label="var_existsOnceOrLess_DocumentAdoptionDate" xlink:type="resource"/>
-    <variable:variableArc name="varArc_existsOnceOrLess_DocumentAdoptionDate" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnceOrLess_DocumentAdoptionDate" xlink:to="var_existsOnceOrLess_DocumentAdoptionDate" xlink:type="arc"/>
-    <cf:conceptName id="filter_existsOnceOrLess_DocumentAdoptionDate" xlink:label="filter_existsOnceOrLess_DocumentAdoptionDate" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_DocumentAdoptionStatus" xlink:to="filter_existsOnlyOnce_DocumentAdoptionStatus" priority="0" order="1.0" complement="false" cover="true"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_DocumentAdoptionStatus_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="existsOnlyOnce_DocumentAdoptionStatus_label_nl">'DocumentAdoptionStatus' MOET exact één keer voorkomen.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_DocumentAdoptionStatus" xlink:to="existsOnlyOnce_DocumentAdoptionStatus_label_nl" order="1.0"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_DocumentAdoptionStatus_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="existsOnlyOnce_DocumentAdoptionStatus_label_en">'DocumentAdoptionStatus' MUST exist only once.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_DocumentAdoptionStatus" xlink:to="existsOnlyOnce_DocumentAdoptionStatus_label_en" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_DocumentAdoptionStatus_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="nl" id="existsOnlyOnce_DocumentAdoptionStatus_assertion-unsatisfied-message_nl">'DocumentAdoptionStatus' MOET exact één keer voorkomen.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_DocumentAdoptionStatus" xlink:to="existsOnlyOnce_DocumentAdoptionStatus_assertion-unsatisfied-message_nl" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_DocumentAdoptionStatus_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="en" id="existsOnlyOnce_DocumentAdoptionStatus_assertion-unsatisfied-message_en">'DocumentAdoptionStatus' MUST exist only once.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_DocumentAdoptionStatus" xlink:to="existsOnlyOnce_DocumentAdoptionStatus_assertion-unsatisfied-message_en" order="1.0"/>
+    <ea:existenceAssertion xlink:type="resource" xlink:label="existsOnceOrLess_DocumentAdoptionDate" id="existsOnceOrLess_DocumentAdoptionDate" aspectModel="dimensional" implicitFiltering="true" test=". le 1"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnceOrLess_DocumentAdoptionDate" xlink:to="ERROR_loc"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_existsOnceOrLess_DocumentAdoptionDate" id="var_existsOnceOrLess_DocumentAdoptionDate" bindAsSequence="false" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnceOrLess_DocumentAdoptionDate" xlink:to="var_existsOnceOrLess_DocumentAdoptionDate" priority="0" order="1.0" name="varArc_existsOnceOrLess_DocumentAdoptionDate"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsOnceOrLess_DocumentAdoptionDate" id="filter_existsOnceOrLess_DocumentAdoptionDate">
       <cf:concept>
         <cf:qname>bw2-titel9:DocumentAdoptionDate</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnceOrLess_DocumentAdoptionDate" xlink:to="filter_existsOnceOrLess_DocumentAdoptionDate" xlink:type="arc"/>
-    <label:label id="existsOnceOrLess_DocumentAdoptionDate_label_nl" xlink:label="existsOnceOrLess_DocumentAdoptionDate_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">'DocumentAdoptionDate' MOET maximaal één keer voorkomen.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnceOrLess_DocumentAdoptionDate" xlink:to="existsOnceOrLess_DocumentAdoptionDate_label_nl" xlink:type="arc"/>
-    <label:label id="existsOnceOrLess_DocumentAdoptionDate_label_en" xlink:label="existsOnceOrLess_DocumentAdoptionDate_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">'DocumentAdoptionDate' MUST exist once or less.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnceOrLess_DocumentAdoptionDate" xlink:to="existsOnceOrLess_DocumentAdoptionDate_label_en" xlink:type="arc"/>
-    <msg:message id="existsOnceOrLess_DocumentAdoptionDate_assertion-unsatisfied-message_nl" xlink:label="existsOnceOrLess_DocumentAdoptionDate_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="nl">'DocumentAdoptionDate' MOET maximaal één keer voorkomen.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnceOrLess_DocumentAdoptionDate" xlink:to="existsOnceOrLess_DocumentAdoptionDate_assertion-unsatisfied-message_nl" xlink:type="arc"/>
-    <msg:message id="existsOnceOrLess_DocumentAdoptionDate_assertion-unsatisfied-message_en" xlink:label="existsOnceOrLess_DocumentAdoptionDate_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="en">'DocumentAdoptionDate' MUST exist once or less.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnceOrLess_DocumentAdoptionDate" xlink:to="existsOnceOrLess_DocumentAdoptionDate_assertion-unsatisfied-message_en" xlink:type="arc"/>
-
-	<va:valueAssertion aspectModel="dimensional" id="notExistsIf_DocumentAdoptionDate" implicitFiltering="true" test="count($varArc_notExistsIf_DocumentAdoptionDate) eq 0" xlink:label="notExistsIf_DocumentAdoptionDate" xlink:type="resource"/>
-    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="ERROR_loc" xlink:type="arc"/>
-	<variable:precondition id="notExistsIf_DocumentAdoptionDate_precondition" test="$varArc_notExistsIf_DocumentAdoptionStatus eq false()" xlink:label="notExistsIf_DocumentAdoptionDate_precondition" xlink:type="resource"/>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set-precondition" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="notExistsIf_DocumentAdoptionDate_precondition" xlink:type="arc"/>
-    <variable:variableArc name="varArc_notExistsIf_DocumentAdoptionDate" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="var_notExistsIf_DocumentAdoptionDate" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="true" fallbackValue="()" id="var_notExistsIf_DocumentAdoptionDate" matches="false" nils="false" xlink:label="var_notExistsIf_DocumentAdoptionDate" xlink:type="resource"/>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_notExistsIf_DocumentAdoptionDate" xlink:to="filter_notExistsIf_DocumentAdoptionDate" xlink:type="arc"/>
-    <cf:conceptName id="filter_notExistsIf_DocumentAdoptionDate" xlink:label="filter_notExistsIf_DocumentAdoptionDate" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnceOrLess_DocumentAdoptionDate" xlink:to="filter_existsOnceOrLess_DocumentAdoptionDate" priority="0" order="1.0" complement="false" cover="true"/>
+    <label:label xlink:type="resource" xlink:label="existsOnceOrLess_DocumentAdoptionDate_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="existsOnceOrLess_DocumentAdoptionDate_label_nl">'DocumentAdoptionDate' MOET maximaal één keer voorkomen.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnceOrLess_DocumentAdoptionDate" xlink:to="existsOnceOrLess_DocumentAdoptionDate_label_nl" order="1.0"/>
+    <label:label xlink:type="resource" xlink:label="existsOnceOrLess_DocumentAdoptionDate_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="existsOnceOrLess_DocumentAdoptionDate_label_en">'DocumentAdoptionDate' MUST exist once or less.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnceOrLess_DocumentAdoptionDate" xlink:to="existsOnceOrLess_DocumentAdoptionDate_label_en" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnceOrLess_DocumentAdoptionDate_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="nl" id="existsOnceOrLess_DocumentAdoptionDate_assertion-unsatisfied-message_nl">'DocumentAdoptionDate' MOET maximaal één keer voorkomen.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnceOrLess_DocumentAdoptionDate" xlink:to="existsOnceOrLess_DocumentAdoptionDate_assertion-unsatisfied-message_nl" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnceOrLess_DocumentAdoptionDate_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="en" id="existsOnceOrLess_DocumentAdoptionDate_assertion-unsatisfied-message_en">'DocumentAdoptionDate' MUST exist once or less.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnceOrLess_DocumentAdoptionDate" xlink:to="existsOnceOrLess_DocumentAdoptionDate_assertion-unsatisfied-message_en" order="1.0"/>
+    <va:valueAssertion xlink:type="resource" xlink:label="notExistsIf_DocumentAdoptionDate" id="notExistsIf_DocumentAdoptionDate" aspectModel="dimensional" implicitFiltering="true" test="count($varArc_notExistsIf_DocumentAdoptionDate) eq 0"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="ERROR_loc"/>
+    <variable:precondition xlink:type="resource" xlink:label="notExistsIf_DocumentAdoptionDate_precondition" id="notExistsIf_DocumentAdoptionDate_precondition" test="$varArc_notExistsIf_DocumentAdoptionStatus eq false()"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set-precondition" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="notExistsIf_DocumentAdoptionDate_precondition" order="1.0"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_notExistsIf_DocumentAdoptionDate" id="var_notExistsIf_DocumentAdoptionDate" bindAsSequence="true" fallbackValue="()" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="var_notExistsIf_DocumentAdoptionDate" priority="0" order="1.0" name="varArc_notExistsIf_DocumentAdoptionDate"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_notExistsIf_DocumentAdoptionDate" id="filter_notExistsIf_DocumentAdoptionDate">
       <cf:concept>
         <cf:qname>bw2-titel9:DocumentAdoptionDate</cf:qname>
       </cf:concept>
     </cf:conceptName>
- 	<variable:variableArc name="varArc_notExistsIf_DocumentAdoptionStatus" order="2" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="var_notExistsIf_DocumentAdoptionStatus" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="false" id="var_notExistsIf_DocumentAdoptionStatus" matches="false" nils="false" xlink:label="var_notExistsIf_DocumentAdoptionStatus" xlink:type="resource"/>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_notExistsIf_DocumentAdoptionStatus" xlink:to="filter_notExistsIf_DocumentAdoptionStatus" xlink:type="arc"/>
-    <cf:conceptName id="filter_notExistsIf_DocumentAdoptionStatus" xlink:label="filter_notExistsIf_DocumentAdoptionStatus" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_notExistsIf_DocumentAdoptionDate" xlink:to="filter_notExistsIf_DocumentAdoptionDate" priority="0" order="1.0" complement="false" cover="true"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_notExistsIf_DocumentAdoptionStatus" id="var_notExistsIf_DocumentAdoptionStatus" bindAsSequence="false" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="var_notExistsIf_DocumentAdoptionStatus" priority="0" order="2.0" name="varArc_notExistsIf_DocumentAdoptionStatus"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_notExistsIf_DocumentAdoptionStatus" id="filter_notExistsIf_DocumentAdoptionStatus">
       <cf:concept>
         <cf:qname>bw2-titel9:DocumentAdoptionStatus</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <label:label id="notExistsIf_DocumentAdoptionDate_label_nl" xlink:label="notExistsIf_DocumentAdoptionDate_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">Wanneer de gerapporteerde waarde van 'DocumentAdoptionStatus' gelijk is aan 'false' dan MOET 'DocumentAdoptionDate' NIET gerapporteerd worden.</label:label>
-	<gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="notExistsIf_DocumentAdoptionDate_label_nl" xlink:type="arc"/>
-    <label:label id="notExistsIf_DocumentAdoptionDate_label_en" xlink:label="notExistsIf_DocumentAdoptionDate_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">When the reported value of 'DocumentAdoptionStatus' is equal to 'false' then 'DocumentAdoptionDate' MUST NOT be reported.</label:label>
-	<gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="notExistsIf_DocumentAdoptionDate_label_en" xlink:type="arc"/>
-    <msg:message id="notExistsIf_DocumentAdoptionDate_assertion-unsatisfied-message_nl" xlink:label="notExistsIf_DocumentAdoptionDate_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="nl">'DocumentAdoptionDate' MOET NIET gerapporteerd worden, omdat de gerapporteerde waarde van 'DocumentAdoptionStatus' gelijk is aan 'false'. | {if (not(xff:has-fallback-value(xs:QName('varArc_notExistsIf_DocumentAdoptionStatus')))) then ((for $v in $varArc_notExistsIf_DocumentAdoptionStatus return concat("name:'",$v/name(),"', value:'",$v,"', @contextRef:'",$v/@contextRef,"', @unitRef:'",$v/@unitRef,"' | "))) else ''}{if (not(xff:has-fallback-value(xs:QName('varArc_notExistsIf_DocumentAdoptionDate')))) then ((for $v in $varArc_notExistsIf_DocumentAdoptionDate return concat("name:'",$v/name(),"', value:'",$v,"', @contextRef:'",$v/@contextRef,"', @unitRef:'",$v/@unitRef,"' | "))) else ''}</msg:message>
-	<gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="notExistsIf_DocumentAdoptionDate_assertion-unsatisfied-message_nl" xlink:type="arc"/>
-    <msg:message id="notExistsIf_DocumentAdoptionDate_assertion-unsatisfied-message_en" xlink:label="notExistsIf_DocumentAdoptionDate_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="en">'DocumentAdoptionDate' MUST NOT be reported, because the reported value of 'DocumentAdoptionStatus' is equal to 'false'. | {if (not(xff:has-fallback-value(xs:QName('varArc_notExistsIf_DocumentAdoptionStatus')))) then ((for $v in $varArc_notExistsIf_DocumentAdoptionStatus return concat("name:'",$v/name(),"', value:'",$v,"', @contextRef:'",$v/@contextRef,"', @unitRef:'",$v/@unitRef,"' | "))) else ''}{if (not(xff:has-fallback-value(xs:QName('varArc_notExistsIf_DocumentAdoptionDate')))) then ((for $v in $varArc_notExistsIf_DocumentAdoptionDate return concat("name:'",$v/name(),"', value:'",$v,"', @contextRef:'",$v/@contextRef,"', @unitRef:'",$v/@unitRef,"' | "))) else ''}</msg:message>
-	<gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="notExistsIf_DocumentAdoptionDate_assertion-unsatisfied-message_en" xlink:type="arc"/>
-
-	<va:valueAssertion aspectModel="dimensional" id="existsIf_DocumentAdoptionDate" implicitFiltering="true" test="count($varArc_existsIf_DocumentAdoptionDate) eq 1" xlink:label="existsIf_DocumentAdoptionDate" xlink:type="resource"/>
-    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="ERROR_loc" xlink:type="arc"/>
-	<variable:precondition id="existsIf_DocumentAdoptionDate_precondition" test="$varArc_existsIf_DocumentAdoptionStatus eq true()" xlink:label="existsIf_DocumentAdoptionDate_precondition" xlink:type="resource"/>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set-precondition" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="existsIf_DocumentAdoptionDate_precondition" xlink:type="arc"/>
-    <variable:variableArc name="varArc_existsIf_DocumentAdoptionDate" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="var_existsIf_DocumentAdoptionDate" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="true" fallbackValue="()" id="var_existsIf_DocumentAdoptionDate" matches="false" nils="false" xlink:label="var_existsIf_DocumentAdoptionDate" xlink:type="resource"/>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsIf_DocumentAdoptionDate" xlink:to="filter_existsIf_DocumentAdoptionDate" xlink:type="arc"/>
-    <cf:conceptName id="filter_existsIf_DocumentAdoptionDate" xlink:label="filter_existsIf_DocumentAdoptionDate" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_notExistsIf_DocumentAdoptionStatus" xlink:to="filter_notExistsIf_DocumentAdoptionStatus" priority="0" order="1.0" complement="false" cover="true"/>
+    <label:label xlink:type="resource" xlink:label="notExistsIf_DocumentAdoptionDate_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="notExistsIf_DocumentAdoptionDate_label_nl">Wanneer de gerapporteerde waarde van 'DocumentAdoptionStatus' gelijk is aan 'false' dan MOET 'DocumentAdoptionDate' NIET gerapporteerd worden.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="notExistsIf_DocumentAdoptionDate_label_nl" order="1.0"/>
+    <label:label xlink:type="resource" xlink:label="notExistsIf_DocumentAdoptionDate_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="notExistsIf_DocumentAdoptionDate_label_en">When the reported value of 'DocumentAdoptionStatus' is equal to 'false' then 'DocumentAdoptionDate' MUST NOT be reported.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="notExistsIf_DocumentAdoptionDate_label_en" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="notExistsIf_DocumentAdoptionDate_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="nl" id="notExistsIf_DocumentAdoptionDate_assertion-unsatisfied-message_nl">'DocumentAdoptionDate' MOET NIET gerapporteerd worden, omdat de gerapporteerde waarde van 'DocumentAdoptionStatus' gelijk is aan 'false'. | {if (not(xff:has-fallback-value(xs:QName('varArc_notExistsIf_DocumentAdoptionStatus')))) then ((for $v in $varArc_notExistsIf_DocumentAdoptionStatus return concat("name:'",$v/name(),"', value:'",$v,"', @contextRef:'",$v/@contextRef,"', @unitRef:'",$v/@unitRef,"' | "))) else ''}{if (not(xff:has-fallback-value(xs:QName('varArc_notExistsIf_DocumentAdoptionDate')))) then ((for $v in $varArc_notExistsIf_DocumentAdoptionDate return concat("name:'",$v/name(),"', value:'",$v,"', @contextRef:'",$v/@contextRef,"', @unitRef:'",$v/@unitRef,"' | "))) else ''}</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="notExistsIf_DocumentAdoptionDate_assertion-unsatisfied-message_nl" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="notExistsIf_DocumentAdoptionDate_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="en" id="notExistsIf_DocumentAdoptionDate_assertion-unsatisfied-message_en">'DocumentAdoptionDate' MUST NOT be reported, because the reported value of 'DocumentAdoptionStatus' is equal to 'false'. | {if (not(xff:has-fallback-value(xs:QName('varArc_notExistsIf_DocumentAdoptionStatus')))) then ((for $v in $varArc_notExistsIf_DocumentAdoptionStatus return concat("name:'",$v/name(),"', value:'",$v,"', @contextRef:'",$v/@contextRef,"', @unitRef:'",$v/@unitRef,"' | "))) else ''}{if (not(xff:has-fallback-value(xs:QName('varArc_notExistsIf_DocumentAdoptionDate')))) then ((for $v in $varArc_notExistsIf_DocumentAdoptionDate return concat("name:'",$v/name(),"', value:'",$v,"', @contextRef:'",$v/@contextRef,"', @unitRef:'",$v/@unitRef,"' | "))) else ''}</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="notExistsIf_DocumentAdoptionDate" xlink:to="notExistsIf_DocumentAdoptionDate_assertion-unsatisfied-message_en" order="1.0"/>
+    <va:valueAssertion xlink:type="resource" xlink:label="existsIf_DocumentAdoptionDate" id="existsIf_DocumentAdoptionDate" aspectModel="dimensional" implicitFiltering="true" test="count($varArc_existsIf_DocumentAdoptionDate) eq 1"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="ERROR_loc"/>
+    <variable:precondition xlink:type="resource" xlink:label="existsIf_DocumentAdoptionDate_precondition" id="existsIf_DocumentAdoptionDate_precondition" test="$varArc_existsIf_DocumentAdoptionStatus eq true()"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set-precondition" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="existsIf_DocumentAdoptionDate_precondition" order="1.0"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_existsIf_DocumentAdoptionDate" id="var_existsIf_DocumentAdoptionDate" bindAsSequence="true" fallbackValue="()" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="var_existsIf_DocumentAdoptionDate" priority="0" order="1.0" name="varArc_existsIf_DocumentAdoptionDate"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsIf_DocumentAdoptionDate" id="filter_existsIf_DocumentAdoptionDate">
       <cf:concept>
         <cf:qname>bw2-titel9:DocumentAdoptionDate</cf:qname>
       </cf:concept>
     </cf:conceptName>
- 	<variable:variableArc name="varArc_existsIf_DocumentAdoptionStatus" order="2" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="var_existsIf_DocumentAdoptionStatus" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="false" id="var_existsIf_DocumentAdoptionStatus" matches="false" nils="false" xlink:label="var_existsIf_DocumentAdoptionStatus" xlink:type="resource"/>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsIf_DocumentAdoptionStatus" xlink:to="filter_existsIf_DocumentAdoptionStatus" xlink:type="arc"/>
-    <cf:conceptName id="filter_existsIf_DocumentAdoptionStatus" xlink:label="filter_existsIf_DocumentAdoptionStatus" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsIf_DocumentAdoptionDate" xlink:to="filter_existsIf_DocumentAdoptionDate" priority="0" order="1.0" complement="false" cover="true"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_existsIf_DocumentAdoptionStatus" id="var_existsIf_DocumentAdoptionStatus" bindAsSequence="false" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="var_existsIf_DocumentAdoptionStatus" priority="0" order="2.0" name="varArc_existsIf_DocumentAdoptionStatus"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsIf_DocumentAdoptionStatus" id="filter_existsIf_DocumentAdoptionStatus">
       <cf:concept>
         <cf:qname>bw2-titel9:DocumentAdoptionStatus</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <label:label id="existsIf_DocumentAdoptionDate_label_nl" xlink:label="existsIf_DocumentAdoptionDate_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">Wanneer de gerapporteerde waarde van 'DocumentAdoptionStatus' gelijk is aan 'true' dan MOET 'DocumentAdoptionDate' gerapporteerd worden.</label:label>
-	<gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="existsIf_DocumentAdoptionDate_label_nl" xlink:type="arc"/>
-    <label:label id="existsIf_DocumentAdoptionDate_label_en" xlink:label="existsIf_DocumentAdoptionDate_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">When the reported value of 'DocumentAdoptionStatus' is equal to 'true' then 'DocumentAdoptionDate' MUST be reported.</label:label>
-	<gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="existsIf_DocumentAdoptionDate_label_en" xlink:type="arc"/>
-    <msg:message id="existsIf_DocumentAdoptionDate_assertion-unsatisfied-message_nl" xlink:label="existsIf_DocumentAdoptionDate_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="nl">'DocumentAdoptionDate' MOET gerapporteerd worden, omdat de gerapporteerde waarde van 'DocumentAdoptionStatus' gelijk is aan 'true'.</msg:message>
-	<gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="existsIf_DocumentAdoptionDate_assertion-unsatisfied-message_nl" xlink:type="arc"/>
-    <msg:message id="existsIf_DocumentAdoptionDate_assertion-unsatisfied-message_en" xlink:label="existsIf_DocumentAdoptionDate_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="en">'DocumentAdoptionDate' MUST be reported, because the reported value of 'DocumentAdoptionStatus' is equal to 'true'.</msg:message>
-	<gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="existsIf_DocumentAdoptionDate_assertion-unsatisfied-message_en" xlink:type="arc"/>
-
-    <ea:existenceAssertion aspectModel="dimensional" id="existsOnlyOnce_LegalEntitySize" implicitFiltering="true" test=". eq 1" xlink:label="existsOnlyOnce_LegalEntitySize" xlink:type="resource"/>
-    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_LegalEntitySize" xlink:to="ERROR_loc" xlink:type="arc"/>
-	<variable:factVariable bindAsSequence="false" id="var_existsOnlyOnce_LegalEntitySize" matches="false" nils="false" xlink:label="var_existsOnlyOnce_LegalEntitySize" xlink:type="resource"/>
-    <variable:variableArc name="varArc_existsOnlyOnce_LegalEntitySize" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_LegalEntitySize" xlink:to="var_existsOnlyOnce_LegalEntitySize" xlink:type="arc"/>
-    <bf:orFilter id="booleanfilter_existsOnlyOnce_LegalEntitySize" xlink:label="booleanfilter_existsOnlyOnce_LegalEntitySize" xlink:type="resource"/>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_LegalEntitySize" xlink:to="booleanfilter_existsOnlyOnce_LegalEntitySize" xlink:type="arc"/>
-	<cf:conceptName id="filter_existsOnlyOnce_LegalEntitySizeMicro" xlink:label="filter_existsOnlyOnce_LegalEntitySizeMicro" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsIf_DocumentAdoptionStatus" xlink:to="filter_existsIf_DocumentAdoptionStatus" priority="0" order="1.0" complement="false" cover="true"/>
+    <label:label xlink:type="resource" xlink:label="existsIf_DocumentAdoptionDate_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="existsIf_DocumentAdoptionDate_label_nl">Wanneer de gerapporteerde waarde van 'DocumentAdoptionStatus' gelijk is aan 'true' dan MOET 'DocumentAdoptionDate' gerapporteerd worden.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="existsIf_DocumentAdoptionDate_label_nl" order="1.0"/>
+    <label:label xlink:type="resource" xlink:label="existsIf_DocumentAdoptionDate_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="existsIf_DocumentAdoptionDate_label_en">When the reported value of 'DocumentAdoptionStatus' is equal to 'true' then 'DocumentAdoptionDate' MUST be reported.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="existsIf_DocumentAdoptionDate_label_en" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsIf_DocumentAdoptionDate_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="nl" id="existsIf_DocumentAdoptionDate_assertion-unsatisfied-message_nl">'DocumentAdoptionDate' MOET gerapporteerd worden, omdat de gerapporteerde waarde van 'DocumentAdoptionStatus' gelijk is aan 'true'.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="existsIf_DocumentAdoptionDate_assertion-unsatisfied-message_nl" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsIf_DocumentAdoptionDate_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="en" id="existsIf_DocumentAdoptionDate_assertion-unsatisfied-message_en">'DocumentAdoptionDate' MUST be reported, because the reported value of 'DocumentAdoptionStatus' is equal to 'true'.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsIf_DocumentAdoptionDate" xlink:to="existsIf_DocumentAdoptionDate_assertion-unsatisfied-message_en" order="1.0"/>
+    <ea:existenceAssertion xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntitySize" id="existsOnlyOnce_LegalEntitySize" aspectModel="dimensional" implicitFiltering="true" test=". eq 1"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="existsOnlyOnce_LegalEntitySize" xlink:to="ERROR_loc"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_existsOnlyOnce_LegalEntitySize" id="var_existsOnlyOnce_LegalEntitySize" bindAsSequence="false" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="existsOnlyOnce_LegalEntitySize" xlink:to="var_existsOnlyOnce_LegalEntitySize" priority="0" order="1.0" name="varArc_existsOnlyOnce_LegalEntitySize"/>
+    <bf:orFilter xlink:type="resource" xlink:label="booleanfilter_existsOnlyOnce_LegalEntitySize" id="booleanfilter_existsOnlyOnce_LegalEntitySize"/>
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_existsOnlyOnce_LegalEntitySize" xlink:to="booleanfilter_existsOnlyOnce_LegalEntitySize" priority="0" order="1.0" complement="false" cover="true"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsOnlyOnce_LegalEntitySizeMicro" id="filter_existsOnlyOnce_LegalEntitySizeMicro">
       <cf:concept>
         <cf:qname>kvk:LegalEntitySizeMicro</cf:qname>
       </cf:concept>
-    </cf:conceptName>	
-    <cf:conceptName id="filter_existsOnlyOnce_LegalEntitySizeSmall" xlink:label="filter_existsOnlyOnce_LegalEntitySizeSmall" xlink:type="resource">
+    </cf:conceptName>
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_existsOnlyOnce_LegalEntitySize" xlink:to="filter_existsOnlyOnce_LegalEntitySizeMicro" priority="0" order="1.0" complement="false" cover="true"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsOnlyOnce_LegalEntitySizeSmall" id="filter_existsOnlyOnce_LegalEntitySizeSmall">
       <cf:concept>
         <cf:qname>kvk:LegalEntitySizeSmall</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <cf:conceptName id="filter_existsOnlyOnce_LegalEntitySizeMedium" xlink:label="filter_existsOnlyOnce_LegalEntitySizeMedium" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_existsOnlyOnce_LegalEntitySize" xlink:to="filter_existsOnlyOnce_LegalEntitySizeSmall" priority="0" order="2.0" complement="false" cover="true"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsOnlyOnce_LegalEntitySizeMedium" id="filter_existsOnlyOnce_LegalEntitySizeMedium">
       <cf:concept>
         <cf:qname>kvk:LegalEntitySizeMedium</cf:qname>
       </cf:concept>
     </cf:conceptName>
-	<cf:conceptName id="filter_existsOnlyOnce_LegalEntitySizeLarge" xlink:label="filter_existsOnlyOnce_LegalEntitySizeLarge" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_existsOnlyOnce_LegalEntitySize" xlink:to="filter_existsOnlyOnce_LegalEntitySizeMedium" priority="0" order="3.0" complement="false" cover="true"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_existsOnlyOnce_LegalEntitySizeLarge" id="filter_existsOnlyOnce_LegalEntitySizeLarge">
       <cf:concept>
         <cf:qname>kvk:LegalEntitySizeLarge</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_existsOnlyOnce_LegalEntitySize" xlink:to="filter_existsOnlyOnce_LegalEntitySizeMicro" xlink:type="arc"/>
-    <variable:variableFilterArc complement="false" cover="true" order="2" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_existsOnlyOnce_LegalEntitySize" xlink:to="filter_existsOnlyOnce_LegalEntitySizeSmall" xlink:type="arc"/>
-    <variable:variableFilterArc complement="false" cover="true" order="3" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_existsOnlyOnce_LegalEntitySize" xlink:to="filter_existsOnlyOnce_LegalEntitySizeMedium" xlink:type="arc"/>
-    <variable:variableFilterArc complement="false" cover="true" order="4" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_existsOnlyOnce_LegalEntitySize" xlink:to="filter_existsOnlyOnce_LegalEntitySizeLarge" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_LegalEntitySize_label_nl" xlink:label="existsOnlyOnce_LegalEntitySize_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">'LegalEntitySizeMicro' of 'LegalEntitySizeSmall' of 'LegalEntitySizeMedium' of 'LegalEntitySizeLarge' MOET exact één keer voorkomen.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntitySize" xlink:to="existsOnlyOnce_LegalEntitySize_label_nl" xlink:type="arc"/>
-    <label:label id="existsOnlyOnce_LegalEntitySize_label_en" xlink:label="existsOnlyOnce_LegalEntitySize_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">'LegalEntitySizeMicro' or 'LegalEntitySizeSmall' or 'LegalEntitySizeMedium' or 'LegalEntitySizeLarge' MUST exist only once.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntitySize" xlink:to="existsOnlyOnce_LegalEntitySize_label_en" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_LegalEntitySize_assertion-unsatisfied-message_nl" xlink:label="existsOnlyOnce_LegalEntitySize_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="nl">'LegalEntitySizeMicro' of 'LegalEntitySizeSmall' of 'LegalEntitySizeMedium' of 'LegalEntitySizeLarge' MOET exact één keer voorkomen.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntitySize" xlink:to="existsOnlyOnce_LegalEntitySize_assertion-unsatisfied-message_nl" xlink:type="arc"/>
-    <msg:message id="existsOnlyOnce_LegalEntitySize_assertion-unsatisfied-message_en" xlink:label="existsOnlyOnce_LegalEntitySize_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="en">'LegalEntitySizeMicro' or 'LegalEntitySizeSmall' or 'LegalEntitySizeMedium' or 'LegalEntitySizeLarge' MUST exist only once.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntitySize" xlink:to="existsOnlyOnce_LegalEntitySize_assertion-unsatisfied-message_en" xlink:type="arc"/>
-
-	<va:valueAssertion aspectModel="dimensional" id="value_LegalEntitySize" implicitFiltering="true" test="$varArc_value_LegalEntitySize eq true()" xlink:label="value_LegalEntitySize" xlink:type="resource"/>
-    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="value_LegalEntitySize" xlink:to="ERROR_loc" xlink:type="arc"/>
-    <variable:factVariable bindAsSequence="false" id="var_value_LegalEntitySize" matches="false" nils="false" xlink:label="var_value_LegalEntitySize" xlink:type="resource"/>
-    <variable:variableArc name="varArc_value_LegalEntitySize" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="value_LegalEntitySize" xlink:to="var_value_LegalEntitySize" xlink:type="arc"/>
-    <bf:orFilter id="booleanfilter_value_LegalEntitySize" xlink:label="booleanfilter_value_LegalEntitySize" xlink:type="resource"/>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_value_LegalEntitySize" xlink:to="booleanfilter_value_LegalEntitySize" xlink:type="arc"/>
-	<cf:conceptName id="filter_value_LegalEntitySizeMicro" xlink:label="filter_value_LegalEntitySizeMicro" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_existsOnlyOnce_LegalEntitySize" xlink:to="filter_existsOnlyOnce_LegalEntitySizeLarge" priority="0" order="4.0" complement="false" cover="true"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntitySize_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="existsOnlyOnce_LegalEntitySize_label_nl">'LegalEntitySizeMicro' of 'LegalEntitySizeSmall' of 'LegalEntitySizeMedium' of 'LegalEntitySizeLarge' MOET exact één keer voorkomen.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntitySize" xlink:to="existsOnlyOnce_LegalEntitySize_label_nl" order="1.0"/>
+    <label:label xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntitySize_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="existsOnlyOnce_LegalEntitySize_label_en">'LegalEntitySizeMicro' or 'LegalEntitySizeSmall' or 'LegalEntitySizeMedium' or 'LegalEntitySizeLarge' MUST exist only once.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="existsOnlyOnce_LegalEntitySize" xlink:to="existsOnlyOnce_LegalEntitySize_label_en" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntitySize_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="nl" id="existsOnlyOnce_LegalEntitySize_assertion-unsatisfied-message_nl">'LegalEntitySizeMicro' of 'LegalEntitySizeSmall' of 'LegalEntitySizeMedium' of 'LegalEntitySizeLarge' MOET exact één keer voorkomen.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntitySize" xlink:to="existsOnlyOnce_LegalEntitySize_assertion-unsatisfied-message_nl" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="existsOnlyOnce_LegalEntitySize_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="en" id="existsOnlyOnce_LegalEntitySize_assertion-unsatisfied-message_en">'LegalEntitySizeMicro' or 'LegalEntitySizeSmall' or 'LegalEntitySizeMedium' or 'LegalEntitySizeLarge' MUST exist only once.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="existsOnlyOnce_LegalEntitySize" xlink:to="existsOnlyOnce_LegalEntitySize_assertion-unsatisfied-message_en" order="1.0"/>
+    <va:valueAssertion xlink:type="resource" xlink:label="value_LegalEntitySize" id="value_LegalEntitySize" aspectModel="dimensional" implicitFiltering="true" test="$varArc_value_LegalEntitySize eq true()"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2016/assertion-unsatisfied-severity" xlink:from="value_LegalEntitySize" xlink:to="ERROR_loc"/>
+    <variable:factVariable xlink:type="resource" xlink:label="var_value_LegalEntitySize" id="var_value_LegalEntitySize" bindAsSequence="false" matches="false" nils="false"/>
+    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="value_LegalEntitySize" xlink:to="var_value_LegalEntitySize" priority="0" order="1.0" name="varArc_value_LegalEntitySize"/>
+    <bf:orFilter xlink:type="resource" xlink:label="booleanfilter_value_LegalEntitySize" id="booleanfilter_value_LegalEntitySize"/>
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="var_value_LegalEntitySize" xlink:to="booleanfilter_value_LegalEntitySize" priority="0" order="1.0" complement="false" cover="true"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_value_LegalEntitySizeMicro" id="filter_value_LegalEntitySizeMicro">
       <cf:concept>
         <cf:qname>kvk:LegalEntitySizeMicro</cf:qname>
       </cf:concept>
-    </cf:conceptName>	
-    <cf:conceptName id="filter_value_LegalEntitySizeSmall" xlink:label="filter_value_LegalEntitySizeSmall" xlink:type="resource">
+    </cf:conceptName>
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_value_LegalEntitySize" xlink:to="filter_value_LegalEntitySizeMicro" priority="0" order="1.0" complement="false" cover="true"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_value_LegalEntitySizeSmall" id="filter_value_LegalEntitySizeSmall">
       <cf:concept>
         <cf:qname>kvk:LegalEntitySizeSmall</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <cf:conceptName id="filter_value_LegalEntitySizeMedium" xlink:label="filter_value_LegalEntitySizeMedium" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_value_LegalEntitySize" xlink:to="filter_value_LegalEntitySizeSmall" priority="0" order="2.0" complement="false" cover="true"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_value_LegalEntitySizeMedium" id="filter_value_LegalEntitySizeMedium">
       <cf:concept>
         <cf:qname>kvk:LegalEntitySizeMedium</cf:qname>
       </cf:concept>
     </cf:conceptName>
-	<cf:conceptName id="filter_value_LegalEntitySizeLarge" xlink:label="filter_value_LegalEntitySizeLarge" xlink:type="resource">
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_value_LegalEntitySize" xlink:to="filter_value_LegalEntitySizeMedium" priority="0" order="3.0" complement="false" cover="true"/>
+    <cf:conceptName xlink:type="resource" xlink:label="filter_value_LegalEntitySizeLarge" id="filter_value_LegalEntitySizeLarge">
       <cf:concept>
         <cf:qname>kvk:LegalEntitySizeLarge</cf:qname>
       </cf:concept>
     </cf:conceptName>
-    <variable:variableFilterArc complement="false" cover="true" order="1" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_value_LegalEntitySize" xlink:to="filter_value_LegalEntitySizeMicro" xlink:type="arc"/>
-    <variable:variableFilterArc complement="false" cover="true" order="2" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_value_LegalEntitySize" xlink:to="filter_value_LegalEntitySizeSmall" xlink:type="arc"/>
-    <variable:variableFilterArc complement="false" cover="true" order="3" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_value_LegalEntitySize" xlink:to="filter_value_LegalEntitySizeMedium" xlink:type="arc"/>
-    <variable:variableFilterArc complement="false" cover="true" order="4" priority="0" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_value_LegalEntitySize" xlink:to="filter_value_LegalEntitySizeLarge" xlink:type="arc"/>
-    <label:label id="value_LegalEntitySize_label_nl" xlink:label="value_LegalEntitySize_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">'LegalEntitySizeMicro' of 'LegalEntitySizeSmall' of 'LegalEntitySizeMedium' of 'LegalEntitySizeLarge' MOET de waarde 'true' hebben.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="value_LegalEntitySize" xlink:to="value_LegalEntitySize_label_nl" xlink:type="arc"/>
-    <label:label id="value_LegalEntitySize_label_en" xlink:label="value_LegalEntitySize_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">'LegalEntitySizeMicro' or 'LegalEntitySizeSmall' or 'LegalEntitySizeMedium' or 'LegalEntitySizeLarge' MUST be reported with the value 'true'.</label:label>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="value_LegalEntitySize" xlink:to="value_LegalEntitySize_label_en" xlink:type="arc"/>
-    <msg:message id="value_LegalEntitySize_assertion-unsatisfied-message_nl" xlink:label="value_LegalEntitySize_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="nl">'LegalEntitySizeMicro' of 'LegalEntitySizeSmall' of 'LegalEntitySizeMedium' of 'LegalEntitySizeLarge' MOET de waarde 'true' hebben.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="value_LegalEntitySize" xlink:to="value_LegalEntitySize_assertion-unsatisfied-message_nl" xlink:type="arc"/>
-    <msg:message id="value_LegalEntitySize_assertion-unsatisfied-message_en" xlink:label="value_LegalEntitySize_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xlink:type="resource" xml:lang="en">'LegalEntitySizeMicro' or 'LegalEntitySizeSmall' or 'LegalEntitySizeMedium' or 'LegalEntitySizeLarge' MUST be reported with the value 'true'.</msg:message>
-    <gen:arc order="1" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="value_LegalEntitySize" xlink:to="value_LegalEntitySize_assertion-unsatisfied-message_en" xlink:type="arc"/>
-
+    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/boolean-filter" xlink:from="booleanfilter_value_LegalEntitySize" xlink:to="filter_value_LegalEntitySizeLarge" priority="0" order="4.0" complement="false" cover="true"/>
+    <label:label xlink:type="resource" xlink:label="value_LegalEntitySize_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="value_LegalEntitySize_label_nl">'LegalEntitySizeMicro' of 'LegalEntitySizeSmall' of 'LegalEntitySizeMedium' of 'LegalEntitySizeLarge' MOET de waarde 'true' hebben.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="value_LegalEntitySize" xlink:to="value_LegalEntitySize_label_nl" order="1.0"/>
+    <label:label xlink:type="resource" xlink:label="value_LegalEntitySize_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="value_LegalEntitySize_label_en">'LegalEntitySizeMicro' or 'LegalEntitySizeSmall' or 'LegalEntitySizeMedium' or 'LegalEntitySizeLarge' MUST be reported with the value 'true'.</label:label>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="value_LegalEntitySize" xlink:to="value_LegalEntitySize_label_en" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="value_LegalEntitySize_assertion-unsatisfied-message_nl" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="nl" id="value_LegalEntitySize_assertion-unsatisfied-message_nl">'LegalEntitySizeMicro' of 'LegalEntitySizeSmall' of 'LegalEntitySizeMedium' of 'LegalEntitySizeLarge' MOET de waarde 'true' hebben.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="value_LegalEntitySize" xlink:to="value_LegalEntitySize_assertion-unsatisfied-message_nl" order="1.0"/>
+    <msg:message xlink:type="resource" xlink:label="value_LegalEntitySize_assertion-unsatisfied-message_en" xlink:role="http://www.xbrl.org/2010/role/message" xml:lang="en" id="value_LegalEntitySize_assertion-unsatisfied-message_en">'LegalEntitySizeMicro' or 'LegalEntitySizeSmall' or 'LegalEntitySizeMedium' or 'LegalEntitySizeLarge' MUST be reported with the value 'true'.</msg:message>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="value_LegalEntitySize" xlink:to="value_LegalEntitySize_assertion-unsatisfied-message_en" order="1.0"/>
   </gen:link>
 </link:linkbase>
