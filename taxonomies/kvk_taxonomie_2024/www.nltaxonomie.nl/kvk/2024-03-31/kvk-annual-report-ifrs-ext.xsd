@@ -42,4 +42,6 @@
   <xsd:import namespace="https://xbrl.ifrs.org/taxonomy/2023-03-23/ifrs-full" schemaLocation="https://xbrl.ifrs.org/taxonomy/2023-03-23/full_ifrs/full_ifrs-cor_2023-03-23.xsd"/>
   <xsd:import namespace="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" schemaLocation="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd"/>
   <xsd:import namespace="https://www.nltaxonomie.nl/ifrs/2024-03-31/ifrs-cor" schemaLocation="https://www.nltaxonomie.nl/ifrs/2024-03-31/ifrs-cor.xsd"/>
+  <xsd:import namespace="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor" schemaLocation="kvk-cor.xsd"/>
+  <xsd:import namespace="http://www.xbrl.org/taxonomy/int/lei/2020-07-02" schemaLocation="https://www.xbrl.org/taxonomy/int/lei/2020-07-02/lei.xsd"/> 
 </xsd:schema>

@@ -37,4 +37,5 @@
   <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
   <xsd:import namespace="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" schemaLocation="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd"/>
   <xsd:import namespace="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor" schemaLocation="kvk-cor.xsd"/>
+  <xsd:import namespace="http://www.xbrl.org/taxonomy/int/lei/2020-07-02" schemaLocation="https://www.xbrl.org/taxonomy/int/lei/2020-07-02/lei.xsd"/> 
 </xsd:schema>
