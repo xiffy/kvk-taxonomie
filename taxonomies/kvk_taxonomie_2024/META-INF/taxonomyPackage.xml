@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tp:taxonomyPackage xml:lang="en" xmlns:tp="http://xbrl.org/2016/taxonomy-package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
+<tp:taxonomyPackage xml:lang="nl" xmlns:tp="http://xbrl.org/2016/taxonomy-package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
 	<tp:identifier>https://www.nltaxonomie.nl/kvk/2024-03-31</tp:identifier>
-	<tp:name>KVK taxonomy 2024</tp:name>
-	<tp:description>XBRL taxonomy prepared by the Dutch Chamber of Commerce for filing financial statements and/or declarations in the Netherlands.</tp:description>
-	<tp:version>0.1.0</tp:version>
+	<tp:name>KVK taxonomie versie 31 maart 2024</tp:name>
+	<tp:description>XBRL taxonomie van de Kamer van Koophandel (KVK) voor het elektronisch deponeren van jaarrekeningen en/of verklaringen in het handelsregister.</tp:description>
+	<tp:version>31 maart 2024 (testversie)</tp:version>
 	<tp:publisher>Kamer van Koophandel</tp:publisher>
 	<tp:publisherURL>https://www.nltaxonomie.nl/kvk</tp:publisherURL>
 	<tp:publisherCountry>NL</tp:publisherCountry>
 	<tp:publicationDate>2024-03-31</tp:publicationDate>
 	<tp:entryPoints>
 		<tp:entryPoint>
-			<tp:name>KVK - Annual Report - NL GAAP - Core</tp:name>
-			<tp:description>Entry point to be used by filers for their extension schema of the annual report based on NL GAAP.</tp:description>
-			<tp:entryPointDocument href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk_annual-report_nl-gaap_cor.xsd" />
+			<tp:name>KVK - Annual Report - NL GAAP - Extension</tp:name>
+			<tp:description>Schema dat gebruikt moet worden door rapporteurs voor het opstellen van hun ESD extensietaxonomie voor de jaarrekening op basis van NL GAAP.</tp:description>
+			<tp:entryPointDocument href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-nlgaap-ext.xsd" />
 		</tp:entryPoint>
+		<tp:entryPoint>
+			<tp:name>KVK - Annual Report - IFRS - Extension</tp:name>
+			<tp:description>Schema dat gebruikt moet worden door rapporteurs voor het opstellen van hun ESD extensietaxonomie voor de jaarrekening op basis van IFRS.</tp:description>
+			<tp:entryPointDocument href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-ifrs-ext.xsd" />
+		</tp:entryPoint>		
+		<tp:entryPoint>
+			<tp:name>KVK - Annual Report - Other GAAP</tp:name>
+			<tp:description>Entry point dat gebruikt moet worden door rapporteurs voor de jaarrekening op basis van andere toegestane verslaggevingsstandaarden dan NL GAAP of IFRS.</tp:description>
+			<tp:entryPointDocument href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-other-gaap.xsd" />
+		</tp:entryPoint>			
 	</tp:entryPoints>
 </tp:taxonomyPackage>
