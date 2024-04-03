@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema targetNamespace="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-ifrs-ext" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:kvk-ar-ifrs-ext="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-ifrs-ext" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:gen="http://xbrl.org/2008/generic" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:linkbaseRef xlink:type="simple" xlink:href="kvk-annual-report-ifrs-ext-for.xml" xlink:role="http://www.xbrl.org/2003/role/linkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="kvk-annual-report-ifrs-ext-dim.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:roleType roleURI="https://www.nltaxonomie.nl/kvk/role/axis-defaults" id="kvk-role-axis-defaults">
+        <link:definition>[990000] Axis - Defaults</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.nltaxonomie.nl/kvk/role/items-consolidated-ifrs-fs" id="kvk-role-items-consolidated-ifrs-fs">
+        <link:definition>[990015] Items reported in the consolidated IFRS financial statements</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.nltaxonomie.nl/kvk/role/items-separate-ifrs-fs" id="kvk-role-items-separate-ifrs-fs">
+        <link:definition>[990025] Items reported in the separate IFRS financial statements</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.nltaxonomie.nl/kvk/role/items-separate-nlgaap-fs" id="kvk-role-items-separate-nlgaap-fs">
+        <link:definition>[990020] Items reported in the separate NL-GAAP financial statements</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.nltaxonomie.nl/kvk/role/items-nondimensional" id="kvk-role-items-nondimensional">
+        <link:definition>[990080] Items to be reported as non-dimensional (dimensional use is prevented)</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.nltaxonomie.nl/kvk/role/items-dimensional" id="kvk-role-items-dimensional">
+        <link:definition>[990090] Items to be reported as dimensional if explicitly defined by preparer (default dimensional use is prevented)</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.nltaxonomie.nl/kvk/role/business-rules-mandatory-facts" id="kvk-role-business-rules-mandatory-facts">
+        <link:definition>[991010] Business rules - Mandatory facts validation</link:definition>
+        <link:usedOn>gen:link</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xsd:import namespace="https://xbrl.ifrs.org/taxonomy/2023-03-23/ifrs-full" schemaLocation="https://xbrl.ifrs.org/taxonomy/2023-03-23/full_ifrs/full_ifrs-cor_2023-03-23.xsd"/>
+  <xsd:import namespace="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" schemaLocation="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd"/>
+  <xsd:import namespace="https://www.nltaxonomie.nl/ifrs/2024-03-31/ifrs-cor" schemaLocation="https://www.nltaxonomie.nl/ifrs/2024-03-31/ifrs-cor.xsd"/>
+  <xsd:import namespace="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor" schemaLocation="kvk-cor.xsd"/>
+  <xsd:import namespace="http://www.xbrl.org/taxonomy/int/lei/2020-07-02" schemaLocation="https://www.xbrl.org/taxonomy/int/lei/2020-07-02/lei.xsd"/> 
+</xsd:schema>

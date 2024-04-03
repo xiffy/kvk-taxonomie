@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_BusinessNames" xlink:label="kvk_BusinessNames_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_BusinessNames_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="kvk_BusinessNames_label_en">Business names</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_BusinessNames_loc" xlink:to="kvk_BusinessNames_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_ItemsInSeparateFinancialStatementsPlaceholder" xlink:label="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_ItemsInSeparateFinancialStatementsPlaceholder_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Items in separate financial statements [placeholder]</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_ItemsInSeparateFinancialStatementsPlaceholder_loc" xlink:to="kvk_ItemsInSeparateFinancialStatementsPlaceholder_label_en" order="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_TitleOfTheDocument" xlink:label="kvk_TitleOfTheDocument_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_TitleOfTheDocument_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Title of the document</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_TitleOfTheDocument_loc" xlink:to="kvk_TitleOfTheDocument_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_ItemsInConsolidatedFinancialStatementsPlaceholder" xlink:label="kvk_ItemsInConsolidatedFinancialStatementsPlaceholder_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_ItemsInConsolidatedFinancialStatementsPlaceholder_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Items in consolidated financial statements [placeholder]</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_ItemsInConsolidatedFinancialStatementsPlaceholder_loc" xlink:to="kvk_ItemsInConsolidatedFinancialStatementsPlaceholder_label_en" order="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_LegalEntitySizeMicro" xlink:label="kvk_LegalEntitySizeMicro_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_LegalEntitySizeMicro_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Legal entity size 'Micro'</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_LegalEntitySizeMicro_loc" xlink:to="kvk_LegalEntitySizeMicro_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_LegalEntitySizeSmall" xlink:label="kvk_LegalEntitySizeSmall_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_LegalEntitySizeSmall_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Legal entity size 'Small'</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_LegalEntitySizeSmall_loc" xlink:to="kvk_LegalEntitySizeSmall_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_LegalEntitySizeMedium" xlink:label="kvk_LegalEntitySizeMedium_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_LegalEntitySizeMedium_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Legal entity size 'Medium'</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_LegalEntitySizeMedium_loc" xlink:to="kvk_LegalEntitySizeMedium_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_LegalEntitySizeLarge" xlink:label="kvk_LegalEntitySizeLarge_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_LegalEntitySizeLarge_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Legal entity size 'Large'</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_LegalEntitySizeLarge_loc" xlink:to="kvk_LegalEntitySizeLarge_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_NullDimension" xlink:label="kvk_NullDimension_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_NullDimension_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Null dimension</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_NullDimension_loc" xlink:to="kvk_NullDimension_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_NullHypercube" xlink:label="kvk_NullHypercube_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_NullHypercube_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Null hypercube</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_NullHypercube_loc" xlink:to="kvk_NullHypercube_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_NullItems" xlink:label="kvk_NullItems_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_NullItems_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Null items</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_NullItems_loc" xlink:to="kvk_NullItems_label_en"/>
+	<link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_DocumentEntityInformationTitle" xlink:label="kvk_DocumentEntityInformationTitle_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_DocumentEntityInformationTitle_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Document and entity information</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_DocumentEntityInformationTitle_loc" xlink:to="kvk_DocumentEntityInformationTitle_label_en"/>
+  </link:labelLink>
+</link:linkbase>
