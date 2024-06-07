@@ -11,7 +11,7 @@
     <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_TitleOfTheDocument" xlink:label="kvk_TitleOfTheDocument_loc"/>
     <link:label xlink:type="resource" xlink:label="kvk_TitleOfTheDocument_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Titel van het document</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_TitleOfTheDocument_loc" xlink:to="kvk_TitleOfTheDocument_label_nl"/>
-    <link:label xlink:type="resource" xlink:label="kvk_TitleOfTheDocument_documentation_nl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="nl">Dit concept is bedoeld voor rapporteurs om een titel mee te kunnen geven aan het document. Bijvoorbeeld: "Jaarrekening bedrijf X 20XX".</link:label>
+    <link:label xlink:type="resource" xlink:label="kvk_TitleOfTheDocument_documentation_nl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="nl">Dit concept is bedoeld voor rapporteurs om een titel mee te kunnen geven aan het document. Bijvoorbeeld: "Jaarrekening bedrijf X 20XX"</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_TitleOfTheDocument_loc" xlink:to="kvk_TitleOfTheDocument_documentation_nl"/>
     <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_ItemsInConsolidatedFinancialStatementsPlaceholder" xlink:label="kvk_ItemsInConsolidatedFinancialStatementsPlaceholder_loc"/>
     <link:label xlink:type="resource" xlink:label="kvk_ItemsInConsolidatedFinancialStatementsPlaceholder_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Items in de geconsolideerde jaarrekening [plaatshouder]</link:label>
