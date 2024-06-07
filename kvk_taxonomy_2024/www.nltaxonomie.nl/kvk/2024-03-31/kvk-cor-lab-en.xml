@@ -40,5 +40,7 @@
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_DocumentEntityInformationTitle_loc" xlink:to="kvk_DocumentEntityInformationTitle_label_en"/>
 	<link:label xlink:type="resource" xlink:label="kvk_TitleOfTheDocument_documentation_en" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en">This concept can be used to give a title to the document. For example: "Financial report company X 20XX"</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_TitleOfTheDocument_loc" xlink:to="kvk_TitleOfTheDocument_documentation_en"/>
+	<link:label xlink:type="resource" xlink:label="kvk_BusinessNames_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en" id="kvk_BusinessNames_verboseLabel_en">Name of the reporting legal entity</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_BusinessNames_loc" xlink:to="kvk_BusinessNames_verboseLabel_en"/>
   </link:labelLink>
 </link:linkbase>
