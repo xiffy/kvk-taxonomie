@@ -67,5 +67,10 @@
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_IncomeStatementClassificationType_loc" xlink:to="kvk_IncomeStatementClassificationType_documentation_nl"/>
     <link:label xlink:type="resource" xlink:label="kvk_IncomeStatementClassificationType_verboseLabel_nl" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Type staat van baten en lasten</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_IncomeStatementClassificationType_loc" xlink:to="kvk_IncomeStatementClassificationType_verboseLabel_nl"/>
+    <link:loc xlink:type="locator" xlink:href="kvk-cor.xsd#kvk_PresentationOrder" xlink:label="kvk_PresentationOrder_loc"/>
+    <link:label xlink:type="resource" xlink:label="kvk_PresentationOrder_documentation_nl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="nl">Het nummer wat de presentatie volgorde aangeeft.</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_PresentationOrder_loc" xlink:to="kvk_PresentationOrder_documentation_nl"/>
+    <link:label xlink:type="resource" xlink:label="kvk_PresentationOrder_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Presentatievolgorde</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_PresentationOrder_loc" xlink:to="kvk_PresentationOrder_label_nl"/>
   </link:labelLink>
 </link:linkbase>
