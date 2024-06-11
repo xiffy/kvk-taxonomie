@@ -12,7 +12,7 @@
   <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
   <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
   <xsd:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
-  <xsd:element name="BusinessNames" id="kvk_BusinessNames" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <xsd:element name="BusinessNames" id="kvk_BusinessNames" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="LegalEntitySizeMicro" id="kvk_LegalEntitySizeMicro" type="xbrli:booleanItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="LegalEntitySizeSmall" id="kvk_LegalEntitySizeSmall" type="xbrli:booleanItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="LegalEntitySizeMedium" id="kvk_LegalEntitySizeMedium" type="xbrli:booleanItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
@@ -22,7 +22,7 @@
   <xsd:element name="NullDimension" id="kvk_NullDimension" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="NullHypercube" id="kvk_NullHypercube" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="NullItems" id="kvk_NullItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration"/>
-  <xsd:element name="DocumentEntityInformationTitle" id="kvk_DocumentEntityInformationTitle" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="instant"/>
+  <xsd:element name="DocumentEntityInformationTitle" id="kvk_DocumentEntityInformationTitle" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="TitleOfTheDocument" id="kvk_TitleOfTheDocument" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="CashFlowStatementMethodType" id="kvk_CashFlowStatementMethodType" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
   <xsd:element name="PresentationOrder" id="kvk_PresentationOrder" type="xbrli:decimalItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration"/>
