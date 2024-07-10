@@ -1,0 +1,10 @@
+repositories:
+  - name: jenv-taxonomie
+    package: jenv_taxonomy_2024
+    branch: main
+  - name: ifrs-taxonomie
+    package: ifrs_taxonomy_2024
+    branch: develop
+  - name: rj-taxonomie
+    package: rj_taxonomy_2024
+    branch: main
