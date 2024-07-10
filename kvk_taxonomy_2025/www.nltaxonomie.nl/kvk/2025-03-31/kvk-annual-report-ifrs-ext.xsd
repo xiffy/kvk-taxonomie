@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xsd:schema targetNamespace="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-ifrs-ext" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:kvk-ar-ifrs-ext="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-ifrs-ext" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:gen="http://xbrl.org/2008/generic" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<xsd:schema targetNamespace="https://www.nltaxonomie.nl/kvk/2025-03-31/kvk-annual-report-ifrs-ext" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:kvk-ar-ifrs-ext="https://www.nltaxonomie.nl/kvk/2025-03-31/kvk-annual-report-ifrs-ext" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:gen="http://xbrl.org/2008/generic" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
   <xsd:annotation>
     <xsd:appinfo>
       <link:linkbaseRef xlink:type="simple" xlink:href="kvk-annual-report-ifrs-ext-for.xml" xlink:role="http://www.xbrl.org/2003/role/linkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
@@ -42,6 +42,6 @@
   <xsd:import namespace="https://xbrl.ifrs.org/taxonomy/2023-03-23/ifrs-full" schemaLocation="https://xbrl.ifrs.org/taxonomy/2023-03-23/full_ifrs/full_ifrs-cor_2023-03-23.xsd"/>
   <xsd:import namespace="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor" schemaLocation="https://www.nltaxonomie.nl/rj/2024-03-31/rj-cor.xsd"/>
   <xsd:import namespace="https://www.nltaxonomie.nl/ifrs/2024-03-31/ifrs-cor" schemaLocation="https://www.nltaxonomie.nl/ifrs/2024-03-31/ifrs-cor.xsd"/>
-  <xsd:import namespace="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-cor" schemaLocation="kvk-cor.xsd"/>
+  <xsd:import namespace="https://www.nltaxonomie.nl/kvk/2025-03-31/kvk-cor" schemaLocation="kvk-cor.xsd"/>
   <xsd:import namespace="http://www.xbrl.org/taxonomy/int/lei/2020-07-02" schemaLocation="https://www.xbrl.org/taxonomy/int/lei/2020-07-02/lei.xsd"/> 
 </xsd:schema>

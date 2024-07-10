@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tp:taxonomyPackage xml:lang="nl" xmlns:tp="http://xbrl.org/2016/taxonomy-package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
-	<tp:identifier>https://www.nltaxonomie.nl/kvk/2024-03-31</tp:identifier>
+	<tp:identifier>https://www.nltaxonomie.nl/kvk/2025-03-31</tp:identifier>
 	<tp:name>KVK taxonomie versie 31 maart 2024</tp:name>
 	<tp:description>XBRL taxonomie van de Kamer van Koophandel (KVK) voor het elektronisch deponeren van jaarrekeningen en/of verklaringen in het handelsregister.</tp:description>
 	<tp:version>31 maart 2024 (testversie)</tp:version>
@@ -12,17 +12,17 @@
 		<tp:entryPoint>
 			<tp:name>KVK - Annual Report - NL GAAP - Extension</tp:name>
 			<tp:description>Schema dat gebruikt moet worden door rapporteurs voor het opstellen van hun ESD extensietaxonomie voor de jaarrekening op basis van NL GAAP.</tp:description>
-			<tp:entryPointDocument href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-nlgaap-ext.xsd" />
+			<tp:entryPointDocument href="https://www.nltaxonomie.nl/kvk/2025-03-31/kvk-annual-report-nlgaap-ext.xsd" />
 		</tp:entryPoint>
 		<tp:entryPoint>
 			<tp:name>KVK - Annual Report - IFRS - Extension</tp:name>
 			<tp:description>Schema dat gebruikt moet worden door rapporteurs voor het opstellen van hun ESD extensietaxonomie voor de jaarrekening op basis van IFRS.</tp:description>
-			<tp:entryPointDocument href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-ifrs-ext.xsd" />
+			<tp:entryPointDocument href="https://www.nltaxonomie.nl/kvk/2025-03-31/kvk-annual-report-ifrs-ext.xsd" />
 		</tp:entryPoint>		
 		<tp:entryPoint>
 			<tp:name>KVK - Annual Report - Other GAAP</tp:name>
 			<tp:description>Entry point dat gebruikt moet worden door rapporteurs voor de jaarrekening op basis van andere toegestane verslaggevingsstandaarden dan NL GAAP of IFRS.</tp:description>
-			<tp:entryPointDocument href="https://www.nltaxonomie.nl/kvk/2024-03-31/kvk-annual-report-other-gaap.xsd" />
+			<tp:entryPointDocument href="https://www.nltaxonomie.nl/kvk/2025-03-31/kvk-annual-report-other-gaap.xsd" />
 		</tp:entryPoint>			
 	</tp:entryPoints>
 </tp:taxonomyPackage>
